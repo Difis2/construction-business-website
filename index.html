@@ -80,7 +80,53 @@
         <p class="section__text__p1">Uma empresa focada em Remodelações</p>
         <p class="section__text__p2">De Ranholas Sintra</p>
         <div class="btn-container">
-          <button class="btn btn-color-2" onclick="">Pedir Orçamento</button>
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-color-2"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Pedir orçamento
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Pedir orçamento
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-color-1"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-color-2">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <button class="btn btn-color-1" onclick="location.href='./#about'">
             Sobre nós
           </button>
@@ -175,7 +221,7 @@
       />
     </section>
     <section id="contacts">
-      <h1 class="title">Contacte-nos</h1>
+      <!-- <h1 class="title">Contacte-nos</h1>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label"
           >Email address</label
@@ -196,6 +242,92 @@
           id="exampleFormControlTextarea1"
           rows="3"
         ></textarea>
+      </div> -->
+      <div class="container mt-5">
+        <h2>Contact Us</h2>
+        <div class="card">
+          <div class="card-body row">
+            <!-- Left part with contact details -->
+            <div class="col-md-4 d-grid align-items-center">
+              <h5>Contact Details</h5>
+              <p>Email: contact@example.com</p>
+              <p>Phone: +1 123-456-7890</p>
+              <p>Address: 123 Street, Cityville</p>
+            </div>
+
+            <!-- Right part with the form -->
+            <div class="col-md-8">
+              <form id="contactForm">
+                <div class="col d-flex justify-content-around mb-3">
+                  <div class="col-md-5">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-5">
+                    <label for="name" class="form-label">Número</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col d-flex justify-content-around mb-3">
+                  <div class="col-md-5">
+                    <label for="email" class="form-label">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-5">
+                    <label for="category" class="form-label">Category</label>
+                    <select
+                      class="form-select"
+                      id="category"
+                      name="category"
+                      required
+                    >
+                      <option value="" selected disabled>
+                        Select a category
+                      </option>
+                      <option value="construcoes">Construções</option>
+                      <option value="remodelacoes">Remodelações</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="submitForm()"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
