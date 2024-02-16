@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
-    <div className="w-full flex justify-center items-center h-20">
-      <ul className="flex flex-row gap-10">
+    <div className="w-full flex justify-center items-center h-32">
+      <ul className="flex flex-row gap-10 items-center">
         <li>
           <img src="favicon.ico"></img>
         </li>

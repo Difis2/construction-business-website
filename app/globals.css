@@ -39,7 +39,7 @@ ul li {
 
 li img {
   margin-right: 200px;
-  height: 30px;
+  height: 70px;
 }
 .carousel_text_1 {
   position: absolute;
@@ -49,8 +49,51 @@ li img {
   color: black;
   font-size: 50px;
   font-weight: 600;
+  text-wrap: nowrap;
+}
+.carousel_button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  background-color: black;
+  width: 100px;
+  height: 100px;
 }
 .carousel_img {
   width: 100%;
-  height: 300px;
+  height: 500px;
+}
+.section_container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 112px 0;
+}
+
+.section_wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.about_img {
+  width: 50%;
+  height: 500px;
+}
+.services_card {
+  background-color: white;
+  color: black;
+  border: 1px solid whitesmoke;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  gap: 20px;
+  transition: background-color 0.3s ease;
+}
+.services_card:hover {
+  background-color: red;
 }
