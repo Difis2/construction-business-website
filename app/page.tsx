@@ -1,13 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import NavBar from "./_components/nav-bar";
-import { Card, Carousel, Col, Row } from "antd";
+import {
+  Button,
+  Card,
+  Carousel,
+  Checkbox,
+  Col,
+  DatePicker,
+  Form,
+  Input,
+  Row,
+  Select,
+} from "antd";
 import { BsHouse } from "react-icons/bs";
 import dynamic from "next/dynamic";
+import TextArea from "antd/es/input/TextArea";
 const MyAwesomeMap = dynamic(() => import("./_components/map"), {
   ssr: false,
 });
 export default function Home() {
+  const onFinish = (values: any) => {
+    console.log("Success:", values);
+  };
+
+  const onFinishFailed = (errorInfo: any) => {
+    console.log("Failed:", errorInfo);
+  };
   return (
     <div className="bg-white h-screen overflow-auto">
       <NavBar></NavBar>
@@ -71,7 +90,7 @@ export default function Home() {
           <div className="font-black text-black text-4xl text-center">
             Algumas das nossas obras!
           </div>
-          <div className="mt-20 w-full flex justify-content-center">
+          <div className="mt-20 w-full flex justify-center">
             <Row className="flex" style={{ gap: "10px 125px" }}>
               <Col xs={{ span: 5 }} lg={{ span: 4 }}>
                 <Card
@@ -160,7 +179,7 @@ export default function Home() {
           <div className="font-black text-black text-4xl text-center">
             Os nossos Serviços!
           </div>
-          <div className="mt-20 w-full flex justify-content-center">
+          <div className="mt-20 w-full flex justify-center">
             <div className="services_card">
               <BsHouse size={100} color="black" />
               <div>Moradias Unifamiliares</div>
@@ -168,7 +187,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="serviços" className="bg-gray-100 section_container ">
+      <div id="serviços" className="bg-white section_container ">
         <div className="section_wrapper">
           <div className="font-black text-black text-4xl text-center">
             A nossa Localização!
@@ -180,15 +199,15 @@ export default function Home() {
             </div>
             <div>
               <div className="text-black">
-                Check{" "}
+                Clique{" "}
                 <a
                   className=""
                   style={{ color: "blue" }}
                   href="https://maps.app.goo.gl/yDzBe3tDvN1q3fnu8"
                 >
-                  Google Maps
+                  aqui
                 </a>{" "}
-                for more details location!
+                para mais detalhes da localização.
               </div>
             </div>
           </div>
@@ -198,6 +217,142 @@ export default function Home() {
         <div className="section_wrapper">
           <div className="font-black text-black text-4xl text-center">
             Pedir informações!
+          </div>
+
+          <div className="mt-20 w-full flex justify-center">
+            <Form onFinish={onFinish} layout={"vertical"}>
+              <Row className="flex mr-10 ml-10 justify-center" gutter={24}>
+                <Col span={11}>
+                  <Form.Item
+                    name="name"
+                    label="Nome"
+                    rules={[
+                      {
+                        required: true,
+                        message: "Insera um nome!",
+                      },
+                      {
+                        pattern: /^[A-Za-z\s]+$/,
+                        message: "Nome não pode conter números!",
+                      },
+                    ]}
+                  >
+                    <Input />
+                  </Form.Item>
+                </Col>
+                <Col span={11}>
+                  <Form.Item
+                    name="email"
+                    label="Email"
+                    rules={[
+                      {
+                        required: true,
+                        message: "Insera um email válido!",
+                        type: "email",
+                      },
+                    ]}
+                  >
+                    <Input />
+                  </Form.Item>
+                </Col>
+                <Col span={11}>
+                  <Form.Item
+                    name="phone"
+                    label="Telefone"
+                    rules={[
+                      {
+                        max: 9,
+                        message: "Número ultrapassa os 9 dígitos!",
+                      },
+                      {
+                        pattern: /^[0-9]+$/,
+                        message: "Número pode apenas conter dígitos!",
+                      },
+                    ]}
+                  >
+                    <Input />
+                  </Form.Item>
+                </Col>
+                <Col span={11}>
+                  <Form.Item
+                    name="value"
+                    label="Valor de investimento"
+                    rules={[
+                      {
+                        required: true,
+                        message: "Insera um investimento!",
+                      },
+                      {
+                        pattern: /^[0-9]+$/,
+                        message: "Insera apenas um valor numérico!",
+                      },
+                    ]}
+                  >
+                    <Input value="number" />
+                  </Form.Item>
+                </Col>
+                <Col span={22}>
+                  <Form.Item name="address" label="Morada">
+                    <Input />
+                  </Form.Item>
+                </Col>
+                <Col span={11}>
+                  <Form.Item name="area" label="Área de intervenção">
+                    <Select>
+                      <Select.Option value="até 50m2">até 50m2</Select.Option>
+                      <Select.Option value="de 50m2 até 100m2">
+                        de 50m2 até 100m2
+                      </Select.Option>
+                      <Select.Option value="mais de 100m2">
+                        mais de 100m2
+                      </Select.Option>
+                    </Select>
+                  </Form.Item>
+                </Col>
+                <Col span={11}>
+                  <Form.Item name="service" label="Tipo de serviço">
+                    <Select>
+                      <Select.Option value="construção">
+                        Construção
+                      </Select.Option>
+                      <Select.Option value="remodelação">
+                        Remodelação
+                      </Select.Option>
+                    </Select>
+                  </Form.Item>
+                </Col>
+                <Col span={11}>
+                  <Form.Item name="intervension" label="Tipo de intervenção">
+                    <Select>
+                      <Select.Option value="construção">
+                        Construção Nova
+                      </Select.Option>
+                      <Select.Option value="remodelação integral">
+                        Remodelação Integral
+                      </Select.Option>
+                      <Select.Option value="remodelação parcial">
+                        Remodelação Parcial
+                      </Select.Option>
+                    </Select>
+                  </Form.Item>
+                </Col>
+                <Col span={11}>
+                  <Form.Item name="startDate" label="Previsão de inicio">
+                    <DatePicker className="w-full" />
+                  </Form.Item>
+                </Col>
+                <Col span={22}>
+                  <Form.Item name="message" label="Mensagem">
+                    <TextArea rows={4} />
+                  </Form.Item>
+                </Col>
+              </Row>
+              <Form.Item className="text-center">
+                <Button type="primary" htmlType="submit">
+                  Submit
+                </Button>
+              </Form.Item>
+            </Form>
           </div>
         </div>
       </div>

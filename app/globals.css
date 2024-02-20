@@ -101,3 +101,6 @@ li img {
   width: 60vw;
   height: 60vh;
 }
+div .ant-form-item-label {
+  text-align: center !important;
+}
