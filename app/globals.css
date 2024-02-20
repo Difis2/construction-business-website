@@ -104,3 +104,11 @@ li img {
 div .ant-form-item-label {
   text-align: center !important;
 }
+.footer_col {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+Footer a:hover {
+  color: white;
+}
