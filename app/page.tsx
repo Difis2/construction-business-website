@@ -1,8 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
 import NavBar from "./_components/nav-bar";
 import { Card, Carousel, Col, Row } from "antd";
 import { BsHouse } from "react-icons/bs";
-
+import dynamic from "next/dynamic";
+const MyAwesomeMap = dynamic(() => import("./_components/map"), {
+  ssr: false,
+});
 export default function Home() {
   return (
     <div className="bg-white h-screen overflow-auto">
@@ -168,6 +172,25 @@ export default function Home() {
         <div className="section_wrapper">
           <div className="font-black text-black text-4xl text-center">
             A nossa Localização!
+          </div>
+          <div className="flex justify-center items-center mt-20 flex-col">
+            <MyAwesomeMap></MyAwesomeMap>
+            <div className="text-black mt-10 font-bold text-xl">
+              Rua César de Oliveira 11a, 2710-725 Sintra
+            </div>
+            <div>
+              <div className="text-black">
+                Check{" "}
+                <a
+                  className=""
+                  style={{ color: "blue" }}
+                  href="https://maps.app.goo.gl/yDzBe3tDvN1q3fnu8"
+                >
+                  Google Maps
+                </a>{" "}
+                for more details location!
+              </div>
+            </div>
           </div>
         </div>
       </div>

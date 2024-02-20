@@ -97,3 +97,7 @@ li img {
 .services_card:hover {
   background-color: red;
 }
+.leaflet-container {
+  width: 60vw;
+  height: 60vh;
+}
