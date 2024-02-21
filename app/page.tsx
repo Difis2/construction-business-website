@@ -21,9 +21,16 @@ import { Footer } from "antd/es/layout/layout";
 // const MyAwesomeMap = dynamic(() => import("./_components/map"), {
 //   ssr: false,
 // });
+
 export default function Home() {
-  const onFinish = (values: any) => {
-    console.log("Success:", values);
+  const onFinish = async (values: any) => {
+    const response = await fetch("/api/sendEmail", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+    });
+    console.log(await response.json());
   };
 
   const onFinishFailed = (errorInfo: any) => {
