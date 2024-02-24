@@ -6,7 +6,6 @@ require("dotenv").config();
 export async function POST(req: Request) {
   try {
     const data = await req.json();
-    console.log(data);
     const {
       name,
       email,
@@ -80,7 +79,6 @@ export async function POST(req: Request) {
       { status: 200 }
     );
   } catch (error) {
-    console.log(error);
     return NextResponse.json(
       { message: "Failed to Send Email" },
       { status: 500 }
