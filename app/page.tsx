@@ -18,6 +18,12 @@ import { BsHouse } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import TextArea from "antd/es/input/TextArea";
 import { Footer } from "antd/es/layout/layout";
+import Meta from "antd/es/card/Meta";
+import { GiAutoRepair } from "react-icons/gi";
+import { MdOutlineDesignServices } from "react-icons/md";
+import { MdOutlineHomeWork } from "react-icons/md";
+import { GrUserWorker } from "react-icons/gr";
+
 // const MyAwesomeMap = dynamic(() => import("./_components/map"), {
 //   ssr: false,
 // });
@@ -29,6 +35,11 @@ export default function Home() {
       headers: {
         "content-type": "application/json",
       },
+      body: JSON.stringify({
+        name: values.name,
+        email: values.email,
+        message: values.message,
+      }),
     });
     console.log(await response.json());
   };
@@ -39,58 +50,70 @@ export default function Home() {
   return (
     <div className="bg-white h-screen overflow-auto">
       <NavBar></NavBar>
-      <Carousel>
+      <Carousel autoplay autoplaySpeed={1500}>
         <div className="relative">
-          <div className="carousel_text_1">Bem vindo</div>
+          <div className="carousel_text">Bem vindo</div>
           <img
-            src="/imgs/carousel1.jpg"
+            src="/imgs/carousel4.jpeg"
             className="carousel_img"
-            alt="Carousel1"
+            alt="Carousel4"
           ></img>
-          <button className="carousel_button"></button>
+          <button className="carousel_button">Learn More</button>
         </div>
+
         <div className="relative">
-          <div className="carousel_text_1">Adeus</div>
+          <div className="carousel_text">Adeus</div>
           <img
             src="/imgs/carousel2.jpg"
             className="carousel_img"
             alt="Carousel2"
           ></img>
-          <button className="carousel_button"></button>
+          <button className="carousel_button">Explore Now</button>
         </div>
-        <div>
+
+        <div className="relative">
+          <div className="carousel_text">Lorem Ipsum</div>
           <img
             src="/imgs/carousel3.jpg"
             className="carousel_img"
             alt="Carousel3"
           ></img>
-          <button className="carousel_button"></button>
+          <button className="carousel_button">Click Here</button>
         </div>
-        <div>
+
+        <div className="relative">
+          <div className="carousel_text">Dolor Sit Amet</div>
           <img
             src="/imgs/carousel1.jpg"
             className="carousel_img"
             alt="Carousel4"
           ></img>
-          <button className="carousel_button"></button>
+          <button className="carousel_button">Get Started</button>
         </div>
       </Carousel>
       <div id="empresa" className="bg-gray-100 section_container">
-        <div className="section_wrapper about_img text-black text-4xl flex justify-center items-center pb-20 text-center">
-          Recriando ambientes com inovação e expertise,
-          <br /> moldando o futuro do seu espaço.
-        </div>
-        <div className="section_wrapper flex justify-center items-center mt-16 pr-8 pl-8 gap-20">
-          <img
-            src="/imgs/carousel1.jpg"
-            className="carousel_img"
-            alt="Carousel5"
-          ></img>
-          <div className=" gap-10 flex flex-col">
-            <div className="font-black text-black text-4xl">
-              Olá aqui vamos meter o que define a empresa!
+        <div className="section_wrapper">
+          <div className="w-full text-black text-4xl flex justify-center items-center text-center">
+            Recriando ambientes com inovação e expertise,
+            <br /> moldando o futuro do seu espaço.
+          </div>
+          <div className="flex justify-center w-full items-center mt-16 pr-8 pl-8 gap-20">
+            <img
+              src="/imgs/carousel1.jpg"
+              className="about_img"
+              alt="Carousel5"
+            ></img>
+            <div className=" gap-10 flex flex-col">
+              <div className="text-black text-xl">
+                Na vanguarda das remodelações e construção civil, a nossa
+                empresa é reconhecida pela excelência em projetos que
+                transformam espaços e superam as expectativas dos nossos
+                clientes.
+              </div>
+              <Button href="/empresa" className="w-fit" color="orange">
+                Saber mais...
+              </Button>
             </div>
-            <button className="bg-black"> Hi There</button>
           </div>
         </div>
       </div>
@@ -99,87 +122,79 @@ export default function Home() {
           <div className="font-black text-black text-4xl text-center">
             Algumas das nossas obras!
           </div>
-          <div className="mt-20 w-full flex justify-center">
-            <Row className="flex" style={{ gap: "10px 125px" }}>
-              <Col xs={{ span: 5 }} lg={{ span: 4 }}>
+          <div className="mt-20 w-full flex justify-center flex-col gap-10 items-center">
+            <Row className="flex justify-center" style={{ gap: "30px 70px" }}>
+              <Col span={6}>
                 <Card
                   hoverable
-                  style={{ width: 300, height: 250 }}
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
-                ></Card>
+                >
+                  <Meta
+                    className=""
+                    title="Ranholas, Sintra"
+                    description="10/2023"
+                  />
+                </Card>
               </Col>
-              <Col xs={{ span: 5 }} lg={{ span: 4 }}>
+              <Col span={6}>
                 <Card
                   hoverable
-                  style={{ width: 300, height: 250 }}
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
-                ></Card>
+                >
+                  <Meta
+                    title="Europe Street beat"
+                    description="www.instagram.com"
+                  />
+                </Card>
               </Col>
-              <Col xs={{ span: 5 }} lg={{ span: 4 }}>
+              <Col span={6}>
                 <Card
                   hoverable
-                  style={{ width: 300, height: 250 }}
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
-                ></Card>
+                >
+                  <Meta
+                    title="Europe Street beat"
+                    description="www.instagram.com"
+                  />
+                </Card>
               </Col>
-              <Col xs={{ span: 5 }} lg={{ span: 4 }}>
+              <Col span={6}>
                 <Card
                   hoverable
-                  style={{ width: 300, height: 250 }}
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
-                ></Card>
+                >
+                  <Meta
+                    title="Europe Street beat"
+                    description="www.instagram.com"
+                  />
+                </Card>
               </Col>
-              <Col xs={{ span: 5 }} lg={{ span: 4 }}>
+              <Col span={6}>
                 <Card
                   hoverable
-                  style={{ width: 300, height: 250 }}
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
-                ></Card>
+                >
+                  <Meta
+                    title="Europe Street beat"
+                    description="www.instagram.com"
+                  />
+                </Card>
               </Col>
-              <Col xs={{ span: 5 }} lg={{ span: 4 }}>
+              <Col span={6}>
                 <Card
                   hoverable
-                  style={{ width: 300, height: 250 }}
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
-                ></Card>
-              </Col>
-              <Col xs={{ span: 5 }} lg={{ span: 4 }}>
-                <Card
-                  hoverable
-                  style={{ width: 300, height: 250 }}
-                  cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
-                ></Card>
-              </Col>
-              <Col xs={{ span: 5 }} lg={{ span: 4 }}>
-                <Card
-                  hoverable
-                  style={{ width: 300, height: 250 }}
-                  cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
-                ></Card>
-              </Col>
-
-              <Col xs={{ span: 5 }} lg={{ span: 4 }}>
-                <Card
-                  hoverable
-                  style={{ width: 300, height: 250 }}
-                  cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
-                ></Card>
-              </Col>
-              <Col xs={{ span: 5 }} lg={{ span: 4 }}>
-                <Card
-                  hoverable
-                  style={{ width: 300, height: 250 }}
-                  cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
-                ></Card>
-              </Col>
-              <Col xs={{ span: 5 }} lg={{ span: 4 }}>
-                <Card
-                  hoverable
-                  style={{ width: 300, height: 250 }}
-                  cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
-                ></Card>
+                >
+                  <Meta
+                    title="Europe Street beat"
+                    description="www.instagram.com"
+                  />
+                </Card>
               </Col>
             </Row>
+            <Button href="/obras" className="w-fit" color="orange">
+              Ver mais...
+            </Button>
           </div>
         </div>
       </div>
@@ -189,10 +204,38 @@ export default function Home() {
             Os nossos Serviços!
           </div>
           <div className="mt-20 w-full flex justify-center">
-            <div className="services_card">
-              <BsHouse size={100} color="black" />
-              <div>Moradias Unifamiliares</div>
-            </div>
+            <Row className="flex justify-center" style={{ gap: "30px 80px" }}>
+              <Col span={6}>
+                <div className="services_card">
+                  <BsHouse size={100} color="black" />
+                  <div className="text-center">Moradias Unifamiliares</div>
+                </div>
+              </Col>
+              <Col span={6}>
+                <div className="services_card">
+                  <GiAutoRepair size={100} color="black" />
+                  <div className="text-center">Reparos e Manutenção</div>
+                </div>
+              </Col>
+              <Col span={6}>
+                <div className="services_card">
+                  <MdOutlineDesignServices size={100} color="black" />
+                  <div className="text-center">Design de interiores</div>
+                </div>
+              </Col>
+              <Col span={6}>
+                <div className="services_card">
+                  <MdOutlineHomeWork size={100} color="black" />
+                  <div className="text-center">Moradias Unifamiliares</div>
+                </div>
+              </Col>
+              <Col span={6}>
+                <div className="services_card">
+                  <GrUserWorker size={100} color="black" />
+                  <div className="text-center">Moradias Unifamiliares</div>
+                </div>
+              </Col>
+            </Row>
           </div>
         </div>
       </div>
@@ -404,10 +447,10 @@ export default function Home() {
               Empresa
             </a>
             <a className="text-black" href="/servicos">
-              Serviços
+              Obras
             </a>
             <a className="text-black" href="/obras">
-              Obras
+              Serviços
             </a>
             <a className="text-black" href="/localizacao">
               Localização
