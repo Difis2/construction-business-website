@@ -15,7 +15,6 @@ import {
   Select,
 } from "antd";
 import { BsHouse } from "react-icons/bs";
-import dynamic from "next/dynamic";
 import TextArea from "antd/es/input/TextArea";
 import { Footer } from "antd/es/layout/layout";
 import Meta from "antd/es/card/Meta";
@@ -23,25 +22,37 @@ import { GiAutoRepair } from "react-icons/gi";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { MdOutlineHomeWork } from "react-icons/md";
 import { GrUserWorker } from "react-icons/gr";
+import dynamic from "next/dynamic";
 
-// const MyAwesomeMap = dynamic(() => import("./_components/map"), {
-//   ssr: false,
-// });
+const MyAwesomeMap = dynamic(() => import("./_components/map"), {
+  ssr: false,
+});
 
 export default function Home() {
   const onFinish = async (values: any) => {
-    const response = await fetch("/api/sendEmail", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify({
-        name: values.name,
-        email: values.email,
-        message: values.message,
-      }),
-    });
-    console.log(await response.json());
+    console.log(values);
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({
+          name: values.name,
+          email: values.email,
+          message: values.message,
+          phone: values.phone,
+          intervension: values.intervension,
+          address: values.address,
+          value: values.value,
+          area: values.area,
+          service: values.service,
+          initialDate: values.startDate?.$d,
+        }),
+      });
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
 
   const onFinishFailed = (errorInfo: any) => {
@@ -245,7 +256,7 @@ export default function Home() {
             A nossa Localização!
           </div>
           <div className="flex justify-center items-center mt-20 flex-col">
-            {/* <MyAwesomeMap></MyAwesomeMap> */}
+            <MyAwesomeMap></MyAwesomeMap>
             <div className="text-black mt-10 font-bold text-xl">
               Rua César de Oliveira 11a, 2710-725 Sintra
             </div>
@@ -364,10 +375,10 @@ export default function Home() {
                 <Col span={11}>
                   <Form.Item name="service" label="Tipo de serviço">
                     <Select>
-                      <Select.Option value="construção">
+                      <Select.Option value="Construção">
                         Construção
                       </Select.Option>
-                      <Select.Option value="remodelação">
+                      <Select.Option value="Remodelação">
                         Remodelação
                       </Select.Option>
                     </Select>
@@ -376,13 +387,13 @@ export default function Home() {
                 <Col span={11}>
                   <Form.Item name="intervension" label="Tipo de intervenção">
                     <Select>
-                      <Select.Option value="construção">
+                      <Select.Option value="Construção">
                         Construção Nova
                       </Select.Option>
-                      <Select.Option value="remodelação integral">
+                      <Select.Option value="Remodelação integral">
                         Remodelação Integral
                       </Select.Option>
-                      <Select.Option value="remodelação parcial">
+                      <Select.Option value="Remodelação parcial">
                         Remodelação Parcial
                       </Select.Option>
                     </Select>
