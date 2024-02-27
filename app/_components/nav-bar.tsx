@@ -5,12 +5,24 @@ const NavBar = () => {
         <li>
           <img src="favicon.ico"></img>
         </li>
-        <li>Home</li>
-        <li>Empresa</li>
-        <li>Obras</li>
-        <li>Serviços</li>
-        <li>Localização</li>
-        <li>Contactos</li>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/about">Empresa</a>
+        </li>
+        <li>
+          <a href="/obras">Obras</a>
+        </li>
+        <li>
+          <a href="/services">Serviços</a>
+        </li>
+        <li>
+          <a href="/location">Localização</a>
+        </li>
+        <li>
+          <a href="/contacts">Contactos</a>
+        </li>
       </ul>
     </div>
   );

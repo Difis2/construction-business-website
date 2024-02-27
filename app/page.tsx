@@ -23,6 +23,7 @@ import { MdOutlineDesignServices } from "react-icons/md";
 import { MdOutlineHomeWork } from "react-icons/md";
 import { GrUserWorker } from "react-icons/gr";
 import dynamic from "next/dynamic";
+import { Image } from "antd";
 
 const MyAwesomeMap = dynamic(() => import("./_components/map"), {
   ssr: false,
@@ -30,7 +31,6 @@ const MyAwesomeMap = dynamic(() => import("./_components/map"), {
 
 export default function Home() {
   const onFinish = async (values: any) => {
-    console.log(values);
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
@@ -53,10 +53,6 @@ export default function Home() {
     } catch (error) {
       console.error("Error:", error);
     }
-  };
-
-  const onFinishFailed = (errorInfo: any) => {
-    console.log("Failed:", errorInfo);
   };
   return (
     <div className="bg-white h-screen overflow-auto">
@@ -138,11 +134,29 @@ export default function Home() {
               <Col span={6}>
                 <Card
                   hoverable
-                  cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
+                  cover={
+                    <Image.PreviewGroup
+                      preview={{
+                        onChange: (current, prev) =>
+                          console.log(
+                            `current index: ${current}, prev index: ${prev}`
+                          ),
+                      }}
+                    >
+                      <Image
+                        className="w-full h-full object-cover"
+                        src="/imgs/carousel1.jpg"
+                      />
+                      <Image
+                        style={{ display: "none" }}
+                        src="https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg"
+                      />
+                    </Image.PreviewGroup>
+                  }
                 >
                   <Meta
                     className=""
-                    title="Ranholas, Sintra"
+                    title="Canalização Ranholas, Sintra"
                     description="10/2023"
                   />
                 </Card>
@@ -231,19 +245,22 @@ export default function Home() {
               <Col span={6}>
                 <div className="services_card">
                   <MdOutlineDesignServices size={100} color="black" />
-                  <div className="text-center">Design de interiores</div>
+                  <div className="text-center">
+                    Acompanhamento de <br />
+                    Arquitetura/Projetos
+                  </div>
                 </div>
               </Col>
               <Col span={6}>
                 <div className="services_card">
                   <MdOutlineHomeWork size={100} color="black" />
-                  <div className="text-center">Moradias Unifamiliares</div>
+                  <div className="text-center">Remodelações</div>
                 </div>
               </Col>
               <Col span={6}>
                 <div className="services_card">
                   <GrUserWorker size={100} color="black" />
-                  <div className="text-center">Moradias Unifamiliares</div>
+                  <div className="text-center">Ladrilhos</div>
                 </div>
               </Col>
             </Row>
@@ -439,7 +456,7 @@ export default function Home() {
               +351 961 443 378 <br /> (Chamada para a rede móvel nacional)
             </div>
             <div className="text-md font-semibold">Email</div>
-            <div className="">geral.robustfabulos@gmail.com</div>
+            <div className="">geral.robustfabulous@gmail.com</div>
           </div>
           <div className="footer_col">
             <div className="text-lg font-bold">Localização</div>
