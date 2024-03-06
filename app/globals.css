@@ -154,7 +154,7 @@ p {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 90px 0;
+  padding: 90px 20px;
 }
 
 .section_wrapper {
@@ -167,6 +167,24 @@ p {
   width: 70%;
   height: 500px;
 }
+.about_gap {
+  gap: 5rem;
+}
+.about_title {
+  font-size: xx-large;
+  line-height: normal;
+  color: black;
+  font-weight: bold;
+}
+.about_text {
+  font-size: xx-large;
+  line-height: normal;
+  color: black;
+}
+.about_gap_text {
+  gap: 2rem;
+}
+
 .services_card {
   background-color: white;
   color: black;
@@ -206,13 +224,4 @@ Footer a:hover {
 }
 .nav-border {
   border-bottom: 7px solid gray;
-}
-
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburguer-nav {
-    display: flex;
-  }
 }

@@ -56,7 +56,7 @@ export default function Home() {
     }
   };
   return (
-    <div className="bg-white h-screen overflow-auto">
+    <div className="bg-white h-screen overflow-y-auto overflow-x-hidden">
       <NavBar></NavBar>
       <Carousel autoplay autoplaySpeed={1500}>
         <div className="relative">
@@ -101,24 +101,28 @@ export default function Home() {
       </Carousel>
       <div id="empresa" className="bg-gray-100 section_container">
         <div className="section_wrapper">
-          <div className="w-full text-black text-4xl flex justify-center items-center text-center">
+          <div className="w-full flex justify-center items-center text-center about_title">
             Recriando ambientes com inovação e expertise,
             <br /> moldando o futuro do seu espaço.
           </div>
-          <div className="flex justify-center w-full items-center mt-16 pr-8 pl-8 gap-20">
+          <div className="flex justify-center w-full items-center mt-16 about_gap">
             <img
               src="/imgs/carousel1.jpg"
               className="about_img"
               alt="Carousel5"
             ></img>
-            <div className=" gap-10 flex flex-col">
-              <div className="text-black text-xl">
+            <div className=" about_gap_text flex flex-col">
+              <div className="about_text">
                 Na vanguarda das remodelações e construção civil, a nossa
                 empresa é reconhecida pela excelência em projetos que
                 transformam espaços e superam as expectativas dos nossos
                 clientes.
               </div>
-              <Button href="/empresa" className="w-fit" color="orange">
+              <Button
+                href="/empresa"
+                className="about_button w-fit"
+                color="orange"
+              >
                 Saber mais...
               </Button>
             </div>
@@ -131,8 +135,12 @@ export default function Home() {
             Algumas das nossas obras!
           </div>
           <div className="mt-20 w-full flex justify-center flex-col gap-10 items-center">
-            <Row className="flex justify-center" style={{ gap: "30px 70px" }}>
-              <Col span={6}>
+            <Row
+              gutter={{ xs: 0, sm: 16, md: 24, lg: 32 }}
+              className="flex justify-center"
+              style={{ gap: "30px 70px" }}
+            >
+              <Col xs={20} sm={4} md={6} xl={6}>
                 <Card
                   hoverable
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -143,7 +151,7 @@ export default function Home() {
                   />
                 </Card>
               </Col>
-              <Col span={6}>
+              <Col xs={20} sm={4} md={6} xl={6}>
                 <Card
                   hoverable
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -154,7 +162,7 @@ export default function Home() {
                   />
                 </Card>
               </Col>
-              <Col span={6}>
+              <Col xs={20} sm={4} md={6} xl={6}>
                 <Card
                   hoverable
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -165,7 +173,7 @@ export default function Home() {
                   />
                 </Card>
               </Col>
-              <Col span={6}>
+              <Col xs={20} sm={4} md={6} xl={6}>
                 <Card
                   hoverable
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -176,7 +184,7 @@ export default function Home() {
                   />
                 </Card>
               </Col>
-              <Col span={6}>
+              <Col xs={20} sm={4} md={6} xl={6}>
                 <Card
                   hoverable
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -187,7 +195,7 @@ export default function Home() {
                   />
                 </Card>
               </Col>
-              <Col span={6}>
+              <Col xs={20} sm={4} md={6} xl={6}>
                 <Card
                   hoverable
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
