@@ -1,4 +1,5 @@
 "use client";
+import FooterComponent from "@/app/_components/footer-component";
 import NavBar from "@/app/_components/nav-bar";
 import { Card, Col, Image, Row } from "antd";
 import Meta from "antd/es/card/Meta";
@@ -122,6 +123,7 @@ export default function Ladrilhos() {
           </Row>
         </div>
       </div>
+      <FooterComponent></FooterComponent>
     </div>
   );
 }
