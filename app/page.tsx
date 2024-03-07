@@ -140,7 +140,7 @@ export default function Home() {
               className="flex justify-center"
               style={{ gap: "30px 70px" }}
             >
-              <Col xs={20} sm={4} md={6} xl={6}>
+              <Col xs={20} sm={4} md={10} xl={6}>
                 <Card
                   hoverable
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -151,7 +151,7 @@ export default function Home() {
                   />
                 </Card>
               </Col>
-              <Col xs={20} sm={4} md={6} xl={6}>
+              <Col xs={20} sm={4} md={10} xl={6}>
                 <Card
                   hoverable
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -162,7 +162,7 @@ export default function Home() {
                   />
                 </Card>
               </Col>
-              <Col xs={20} sm={4} md={6} xl={6}>
+              <Col xs={20} sm={4} md={10} xl={6}>
                 <Card
                   hoverable
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -173,7 +173,7 @@ export default function Home() {
                   />
                 </Card>
               </Col>
-              <Col xs={20} sm={4} md={6} xl={6}>
+              <Col xs={20} sm={4} md={10} xl={6}>
                 <Card
                   hoverable
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -184,7 +184,7 @@ export default function Home() {
                   />
                 </Card>
               </Col>
-              <Col xs={20} sm={4} md={6} xl={6}>
+              <Col xs={20} sm={4} md={10} xl={6}>
                 <Card
                   hoverable
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -195,7 +195,7 @@ export default function Home() {
                   />
                 </Card>
               </Col>
-              <Col xs={20} sm={4} md={6} xl={6}>
+              <Col xs={20} sm={4} md={10} xl={6}>
                 <Card
                   hoverable
                   cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -219,20 +219,24 @@ export default function Home() {
             Os nossos Serviços!
           </div>
           <div className="mt-20 w-full flex justify-center">
-            <Row className="flex justify-center" style={{ gap: "30px 80px" }}>
-              <Col span={6}>
+            <Row
+              className="flex justify-center items-center"
+              style={{ gap: "30px 80px" }}
+              gutter={{ xs: 0, sm: 16, md: 6, lg: 32 }}
+            >
+              <Col xs={26} sm={4} md={8} xl={6}>
                 <div className="services_card">
                   <BsHouse size={100} color="black" />
                   <div className="text-center">Moradias Unifamiliares</div>
                 </div>
               </Col>
-              <Col span={6}>
+              <Col xs={26} sm={4} md={8} xl={6}>
                 <div className="services_card">
                   <GiAutoRepair size={100} color="black" />
                   <div className="text-center">Reparos e Manutenção</div>
                 </div>
               </Col>
-              <Col span={6}>
+              <Col xs={26} sm={4} md={8} xl={6}>
                 <div className="services_card">
                   <MdOutlineDesignServices size={100} color="black" />
                   <div className="text-center">
@@ -241,13 +245,13 @@ export default function Home() {
                   </div>
                 </div>
               </Col>
-              <Col span={6}>
+              <Col xs={26} sm={4} md={8} xl={6}>
                 <div className="services_card">
                   <MdOutlineHomeWork size={100} color="black" />
                   <div className="text-center">Remodelações</div>
                 </div>
               </Col>
-              <Col span={6}>
+              <Col xs={26} sm={4} md={8} xl={6}>
                 <div className="services_card">
                   <GrUserWorker size={100} color="black" />
                   <div className="text-center">Ladrilhos</div>
@@ -263,7 +267,7 @@ export default function Home() {
             A nossa Localização!
           </div>
           <div className="flex justify-center items-center mt-20 flex-col">
-            <MyAwesomeMap></MyAwesomeMap>
+            {/* <MyAwesomeMap></MyAwesomeMap> */}
             <div className="text-black mt-10 font-bold text-xl">
               Rua César de Oliveira 11a, 2710-725 Sintra
             </div>

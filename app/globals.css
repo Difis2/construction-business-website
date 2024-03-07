@@ -197,6 +197,8 @@ p {
   padding: 50px;
   width: max-content;
   gap: 20px;
+  width: 250px;
+  height: 250px;
   transition: background-color 0.3s ease;
 }
 .services_card:hover {
