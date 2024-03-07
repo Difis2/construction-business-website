@@ -208,6 +208,9 @@ p {
   width: 60vw;
   height: 60vh;
 }
+.map {
+  width: -webkit-fill-available;
+}
 div .ant-form-item-label {
   text-align: center !important;
 }

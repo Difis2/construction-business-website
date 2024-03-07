@@ -7,6 +7,7 @@ import "leaflet-defaulticon-compatibility";
 const Map = () => {
   return (
     <MapContainer
+      className="map"
       center={[38.787159179201325, -9.354792675655146]}
       zoom={19}
       scrollWheelZoom={false}
