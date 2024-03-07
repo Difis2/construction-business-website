@@ -230,3 +230,7 @@ Footer a:hover {
 .nav-border {
   border-bottom: 7px solid gray;
 }
+
+.form-label {
+  font-weight: 700;
+}

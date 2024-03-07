@@ -296,8 +296,9 @@ export default function Home() {
           <div className="mt-20 w-full flex justify-center">
             <Form onFinish={onFinish} layout={"vertical"}>
               <Row className="flex mr-10 ml-10 justify-center" gutter={24}>
-                <Col span={11}>
+                <Col xs={20} sm={26} md={11} xl={11}>
                   <Form.Item
+                    className="form-label"
                     name="name"
                     label="Nome"
                     rules={[
@@ -314,8 +315,9 @@ export default function Home() {
                     <Input />
                   </Form.Item>
                 </Col>
-                <Col span={11}>
+                <Col xs={20} sm={26} md={11} xl={11}>
                   <Form.Item
+                    className="form-label"
                     name="email"
                     label="Email"
                     rules={[
@@ -329,8 +331,9 @@ export default function Home() {
                     <Input />
                   </Form.Item>
                 </Col>
-                <Col span={11}>
+                <Col xs={20} sm={26} md={11} xl={11}>
                   <Form.Item
+                    className="form-label"
                     name="phone"
                     label="Telefone"
                     rules={[
@@ -347,8 +350,9 @@ export default function Home() {
                     <Input />
                   </Form.Item>
                 </Col>
-                <Col span={11}>
+                <Col xs={20} sm={26} md={11} xl={11}>
                   <Form.Item
+                    className="form-label"
                     name="value"
                     label="Valor de investimento"
                     rules={[
@@ -365,13 +369,21 @@ export default function Home() {
                     <Input value="number" />
                   </Form.Item>
                 </Col>
-                <Col span={22}>
-                  <Form.Item name="address" label="Morada">
+                <Col xs={20} sm={26} md={22} xl={22}>
+                  <Form.Item
+                    className="form-label"
+                    name="address"
+                    label="Morada"
+                  >
                     <Input />
                   </Form.Item>
                 </Col>
-                <Col span={11}>
-                  <Form.Item name="area" label="Área de intervenção">
+                <Col xs={20} sm={26} md={11} xl={11}>
+                  <Form.Item
+                    className="form-label"
+                    name="area"
+                    label="Área de intervenção"
+                  >
                     <Select>
                       <Select.Option value="até 50m2">até 50m2</Select.Option>
                       <Select.Option value="de 50m2 até 100m2">
@@ -383,8 +395,12 @@ export default function Home() {
                     </Select>
                   </Form.Item>
                 </Col>
-                <Col span={11}>
-                  <Form.Item name="service" label="Tipo de serviço">
+                <Col xs={20} sm={26} md={11} xl={11}>
+                  <Form.Item
+                    className="form-label"
+                    name="service"
+                    label="Tipo de serviço"
+                  >
                     <Select>
                       <Select.Option value="Construção">
                         Construção
@@ -395,8 +411,12 @@ export default function Home() {
                     </Select>
                   </Form.Item>
                 </Col>
-                <Col span={11}>
-                  <Form.Item name="intervension" label="Tipo de intervenção">
+                <Col xs={20} sm={26} md={11} xl={11}>
+                  <Form.Item
+                    className="form-label"
+                    name="intervension"
+                    label="Tipo de intervenção"
+                  >
                     <Select>
                       <Select.Option value="Construção">
                         Construção Nova
@@ -410,12 +430,16 @@ export default function Home() {
                     </Select>
                   </Form.Item>
                 </Col>
-                <Col span={11}>
-                  <Form.Item name="startDate" label="Previsão de inicio">
+                <Col xs={20} sm={26} md={11} xl={11}>
+                  <Form.Item
+                    className="form-label"
+                    name="startDate"
+                    label="Previsão de inicio"
+                  >
                     <DatePicker className="w-full" />
                   </Form.Item>
                 </Col>
-                <Col span={22}>
+                <Col xs={20} sm={26} md={22} xl={22}>
                   <Form.Item name="message" label="Mensagem">
                     <TextArea rows={4} />
                   </Form.Item>
