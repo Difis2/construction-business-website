@@ -177,7 +177,7 @@ p {
   font-weight: bold;
 }
 .about_text {
-  font-size: xx-large;
+  font-size: x-large;
   line-height: normal;
   color: black;
 }
@@ -233,4 +233,23 @@ Footer a:hover {
 
 .form-label {
   font-weight: 700;
+}
+.button-top {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 200px;
+  border-radius: 150px 150px 0 0;
+  animation: moveUpDown 0.5s infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(-10px);
+  }
 }

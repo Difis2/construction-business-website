@@ -43,12 +43,23 @@
   label {
     font-size: 10px !important;
   }
+  .button-top {
+    height: 80px;
+    width: 150px;
+  }
 }
 
 @media screen and (max-width: 300px) {
   label {
     font-size: 7px !important;
     font-weight: 700;
+  }
+  .button-top {
+    height: 80px;
+    width: 100px;
+  }
+  .fold-size {
+    width: 300px;
   }
 }
 @media screen and (max-height: 600px) {

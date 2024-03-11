@@ -23,7 +23,6 @@ import { MdOutlineDesignServices } from "react-icons/md";
 import { MdOutlineHomeWork } from "react-icons/md";
 import { GrUserWorker } from "react-icons/gr";
 import dynamic from "next/dynamic";
-import { Image } from "antd";
 import FooterComponent from "./_components/footer-component";
 
 const MyAwesomeMap = dynamic(() => import("./_components/map"), {
@@ -56,7 +55,7 @@ export default function Home() {
     }
   };
   return (
-    <div className="bg-white h-screen overflow-y-auto overflow-x-hidden">
+    <div className="bg-white h-screen w-full fold-size">
       <NavBar></NavBar>
       <Carousel autoplay autoplaySpeed={1500}>
         <div className="relative">
