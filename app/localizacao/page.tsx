@@ -2,7 +2,7 @@
 import FooterComponent from "../_components/footer-component";
 import NavBar from "../_components/nav-bar";
 
-export default function Obras() {
+export default function Localizacao() {
   return (
     <div className="bg-white h-screen">
       <NavBar></NavBar>

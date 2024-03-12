@@ -38,13 +38,13 @@ const NavBar = () => {
     <div className="w-full flex justify-center items-center h-48 bg-white nav-border">
       <ul id="desktop-nav" className="flex flex-row gap-10 items-center ">
         <li>
-          <img className="w-52 h-40" src="/imgs/logo2.png"></img>
+          <img className="w-52 h-40" src="/imgs/logo2.png" alt="Logo"></img>
         </li>
         <li>
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/about">Empresa</a>
+          <a href="/empresa">Empresa</a>
         </li>
         <li>
           <Dropdown menu={{ items }}>
@@ -54,13 +54,13 @@ const NavBar = () => {
           </Dropdown>
         </li>
         <li>
-          <a href="/services">Serviços</a>
+          <a href="/servicos">Serviços</a>
         </li>
         <li>
-          <a href="/location">Localização</a>
+          <a href="/localizacao">Localização</a>
         </li>
         <li>
-          <a href="/contacts">Contactos</a>
+          <a href="/contactos">Contactos</a>
         </li>
       </ul>
       <ul
@@ -68,7 +68,11 @@ const NavBar = () => {
         className="flex flex-row gap-10 items-center justify-between w-full px-10 "
       >
         <div>
-          <img className="w-52 h-40" src="/imgs/logo2.png"></img>
+          <img
+            className="w-52 h-40"
+            src="/imgs/logo2.png"
+            alt="Logo Hamburguer"
+          ></img>
         </div>
         <div className="hamburguer-menu">
           <div className="hamburguer-icon" onClick={toggleMenu}>
@@ -81,7 +85,7 @@ const NavBar = () => {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/about">Empresa</a>
+              <a href="/empresa">Empresa</a>
             </li>
             <li>
               <Dropdown placement="topLeft" menu={{ items }}>
@@ -91,13 +95,13 @@ const NavBar = () => {
               </Dropdown>
             </li>
             <li>
-              <a href="/services">Serviços</a>
+              <a href="/servicos">Serviços</a>
             </li>
             <li>
-              <a href="/location">Localização</a>
+              <a href="/localizacao">Localização</a>
             </li>
             <li>
-              <a href="/contacts">Contactos</a>
+              <a href="/contactos">Contactos</a>
             </li>
           </div>
         </div>

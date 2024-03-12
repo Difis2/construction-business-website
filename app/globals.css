@@ -253,3 +253,21 @@ Footer a:hover {
     transform: translate(-50%, -50%) translateY(-10px);
   }
 }
+
+.services-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: darkgray;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services-header {
+  font-size: medium;
+  color: black;
+  font-weight: 700;
+}
+.services-text {
+  color: black;
+}
