@@ -1,8 +1,10 @@
 "use client";
-import { Col, Row } from "antd";
+import { Col, Divider, Row } from "antd";
 import FooterComponent from "../_components/footer-component";
 import NavBar from "../_components/nav-bar";
 import { BsHouse } from "react-icons/bs";
+import { GiAutoRepair } from "react-icons/gi";
+import { MdOutlineDesignServices, MdOutlineHomeWork } from "react-icons/md";
 
 export default function Servicos() {
   return (
@@ -10,49 +12,28 @@ export default function Servicos() {
       <NavBar></NavBar>
       <div className="bg-gray-100 section_container">
         <div className="w-full justify-center flex flex-col items-center gap-20">
+          <div className="flex flex-col justify-center items-center">
+            <h1>Serviços</h1>
+
+            <p>Os nossos Serviços</p>
+            <Divider
+              className="divider"
+              style={{ width: "10px !important" }}
+            ></Divider>
+          </div>
           <Row
-            gutter={{ xs: 0, sm: 16, md: 24, lg: 32 }}
-            className="flex justify-center"
+            className="flex justify-center items-center"
+            style={{ gap: "60px 80px" }}
           >
-            <Col span={12}>
-              <img src="/imgs/carousel1.jpg" alt="Carousel5"></img>
-            </Col>
-            <Col span={12} className="w-full">
-              <div className="flex justify-start items-start flex-col gap-3">
-                <div className="services-icon">
-                  <BsHouse size={30} color="black" />
-                </div>
-                <div className="services-header">Moradias Unifamiliares</div>
-              </div>
-            </Col>
-          </Row>
-          <Row
-            gutter={{ xs: 0, sm: 16, md: 24, lg: 32 }}
-            className="flex justify-center "
-          >
-            <Col span={12} className="w-full">
-              <div className="flex justify-start items-start flex-col gap-3">
-                <div className="services-icon">
-                  <BsHouse size={30} color="black" />
-                </div>
-                <div className="services-header">Reparos e manutenções</div>
-              </div>
-            </Col>
-            <Col span={12}>
-              <img src="/imgs/carousel1.jpg" alt="Carousel5"></img>
-            </Col>
-          </Row>
-          <Row className="flex justify-center ">
-            <Col span={9}>
-              <img src="/imgs/carousel1.jpg" alt="Carousel5"></img>
-            </Col>
-            <Col span={9} className="w-full">
-              <div className="flex justify-start items-start flex-col gap-3">
-                <div className="services-icon">
-                  <BsHouse size={30} color="black" />
-                </div>
-                <div className="services-header">
-                  Acompanhamento de Arquitetura/Projetos
+            <Col xs={32} sm={26} md={8} xl={6}>
+              <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center items-center gap-2">
+                  <BsHouse size={70} color="red" />
+                  <div className="services-header">Moradias Unifamiliares</div>
+                  <Divider
+                    className="divider"
+                    style={{ width: "10px !important" }}
+                  ></Divider>
                 </div>
                 <div className="services-text">
                   Acompanhamento de Arquitetura/Projetos Acompanhamento de
@@ -63,36 +44,82 @@ export default function Servicos() {
                 </div>
               </div>
             </Col>
-          </Row>
-          <Row
-            gutter={{ xs: 0, sm: 16, md: 24, lg: 32 }}
-            className="flex justify-center "
-          >
-            <Col span={12} className="w-full">
-              <div className="flex justify-start items-start flex-col gap-3">
-                <div className="services-icon">
-                  <BsHouse size={30} color="black" />
+            <Col xs={32} sm={26} md={8} xl={6}>
+              <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center items-center gap-2">
+                  <GiAutoRepair size={70} color="red" />
+                  <div className="services-header">Reparos e manutenções</div>
+                  <Divider
+                    className="divider"
+                    style={{ width: "10px !important" }}
+                  ></Divider>
                 </div>
-                <div className="services-header">Remodelações</div>
+                <div className="services-text">
+                  Acompanhamento de Arquitetura/Projetos Acompanhamento de
+                  Arquitetura/Projetos Acompanhamento de Arquitetura/Projetos
+                  Acompanhamento de Arquitetura/ProjetosAcompanhamento de
+                  Arquitetura/ProjetosAcompanhamento de
+                  Arquitetura/ProjetosAcompanhamento de Arquitetura/Projetos
+                </div>
               </div>
             </Col>
-            <Col span={12}>
-              <img src="/imgs/carousel1.jpg" alt="Carousel5"></img>
-            </Col>
-          </Row>
-          <Row
-            gutter={{ xs: 0, sm: 16, md: 24, lg: 32 }}
-            className="flex justify-center "
-          >
-            <Col span={12}>
-              <img src="/imgs/carousel1.jpg" alt="Carousel5"></img>
-            </Col>
-            <Col span={12} className="w-full">
-              <div className="flex justify-start items-start flex-col gap-3">
-                <div className="services-icon">
-                  <BsHouse size={30} color="black" />
+            <Col xs={32} sm={26} md={8} xl={6}>
+              <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center items-center gap-2">
+                  <MdOutlineDesignServices size={70} color="red" />
+                  <div className="services-header">
+                    Acompanhamento de Arquitetura/Projetos
+                  </div>
+                  <Divider
+                    className="divider"
+                    style={{ width: "10px !important" }}
+                  ></Divider>
                 </div>
-                <div className="services-header">Ladrilhos</div>
+                <div className="services-text">
+                  Acompanhamento de Arquitetura/Projetos Acompanhamento de
+                  Arquitetura/Projetos Acompanhamento de Arquitetura/Projetos
+                  Acompanhamento de Arquitetura/ProjetosAcompanhamento de
+                  Arquitetura/ProjetosAcompanhamento de
+                  Arquitetura/ProjetosAcompanhamento de Arquitetura/Projetos
+                </div>
+              </div>
+            </Col>
+            <Col xs={32} sm={26} md={8} xl={6}>
+              <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center items-center gap-2">
+                  <MdOutlineHomeWork size={70} color="red" />
+                  <div className="services-header">Remodelações</div>
+                  <Divider
+                    className="divider"
+                    style={{ width: "10px !important" }}
+                  ></Divider>
+                </div>
+                <div className="services-text">
+                  Acompanhamento de Arquitetura/Projetos Acompanhamento de
+                  Arquitetura/Projetos Acompanhamento de Arquitetura/Projetos
+                  Acompanhamento de Arquitetura/ProjetosAcompanhamento de
+                  Arquitetura/ProjetosAcompanhamento de
+                  Arquitetura/ProjetosAcompanhamento de Arquitetura/Projetos
+                </div>
+              </div>
+            </Col>
+            <Col xs={32} sm={26} md={8} xl={6}>
+              <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center items-center gap-2">
+                  <BsHouse size={70} color="red" />
+                  <div className="services-header">Ladrilhos</div>
+                  <Divider
+                    className="divider"
+                    style={{ width: "10px !important" }}
+                  ></Divider>
+                </div>
+                <div className="services-text">
+                  Acompanhamento de Arquitetura/Projetos Acompanhamento de
+                  Arquitetura/Projetos Acompanhamento de Arquitetura/Projetos
+                  Acompanhamento de Arquitetura/ProjetosAcompanhamento de
+                  Arquitetura/ProjetosAcompanhamento de
+                  Arquitetura/ProjetosAcompanhamento de Arquitetura/Projetos
+                </div>
               </div>
             </Col>
           </Row>

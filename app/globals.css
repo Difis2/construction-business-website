@@ -267,7 +267,28 @@ Footer a:hover {
   font-size: medium;
   color: black;
   font-weight: 700;
+  text-align: center;
 }
 .services-text {
   color: black;
+  text-align: center;
+}
+
+.services-image {
+  display: flex !important;
+  justify-content: center !important;
+}
+.ant-divider.divider {
+  background-color: black;
+  min-width: 60px;
+  padding: 0px;
+  margin: 10px;
+}
+.section-title {
+  font-size: xx-large;
+  color: black;
+  font-weight: bold;
+}
+.section-subtitle {
+  color: gray;
 }

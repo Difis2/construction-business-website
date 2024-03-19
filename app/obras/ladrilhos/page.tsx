@@ -1,7 +1,7 @@
 "use client";
 import FooterComponent from "@/app/_components/footer-component";
 import NavBar from "@/app/_components/nav-bar";
-import { Card, Col, Image, Row } from "antd";
+import { Card, Col, Divider, Image, Row } from "antd";
 import Meta from "antd/es/card/Meta";
 
 export default function Ladrilhos() {
@@ -9,9 +9,14 @@ export default function Ladrilhos() {
     <div className="bg-white h-screen">
       <NavBar></NavBar>
       <div className="bg-gray-100 section_container">
-        <div className="flex flex-col items-center">
-          <h1>Ladrilhos</h1>
+        <div className="flex flex-col justify-center items-center">
+          <h1>Ladrinhos</h1>
+
           <p>A nossa especialidade</p>
+          <Divider
+            className="divider"
+            style={{ width: "10px !important" }}
+          ></Divider>
         </div>
         <div className="mt-20 w-full flex justify-center flex-col gap-10 items-center">
           <Row className="flex justify-center" style={{ gap: "30px 70px" }}>

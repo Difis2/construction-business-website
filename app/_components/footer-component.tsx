@@ -13,21 +13,21 @@ const FooterComponent = () => {
   }
   return (
     <div className="bg-gray-100">
-      <div className="w-full justify-center flex items-center">
+      <div className="w-full justify-center flex items-center ">
         <Button type="link">
           <MdKeyboardDoubleArrowUp
             onClick={scrollToTop}
             className="button-top"
             color="black"
             style={{
-              background: "darkgray",
+              backgroundColor: "darkgray",
             }}
           />
         </Button>
       </div>
 
       <Footer style={{ background: "darkgray", borderTop: "4px solid black" }}>
-        <Row className="flex w-full justify-center flex-row section_wrapper">
+        <Row className="flex w-full justify-center flex-row text-center">
           <Col xs={20} sm={10} md={10} xl={6}>
             <div className="text-lg font-extrabold">
               Robust and Fabulous, Lda
@@ -42,18 +42,18 @@ const FooterComponent = () => {
             </div>
           </Col>
           <Col xs={20} sm={10} md={10} xl={6}>
-            <div className="text-lg font-extrabold">Contactos</div>
-            <div className="text-md font-bold">Telefone</div>
+            <div className="text-lg font-extrabold ">Contactos</div>
+            <div className="text-md font-bold ">Telefone</div>
             <div className="">
               +351 961 443 378 <br /> (Chamada para a rede móvel nacional)
             </div>
-            <div className="text-md font-bold">Email</div>
+            <div className="text-md font-bold ">Email</div>
             <div className="">geral.robustfabulous@gmail.com</div>
           </Col>
           <Col xs={20} sm={10} md={10} xl={6}>
             {" "}
-            <div className="text-lg font-extrabold">Localização</div>
-            <div className="text-md font-bold">Lisboa</div>
+            <div className="text-lg font-extrabold ">Localização</div>
+            <div className="text-md font-bold ">Lisboa</div>
             <div className="">
               Rua Cesar de Oliveira, Nº 11 <br /> Ranholas <br /> 2710-725
               Sintra

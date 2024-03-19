@@ -16,7 +16,6 @@ import {
 } from "antd";
 import { BsHouse } from "react-icons/bs";
 import TextArea from "antd/es/input/TextArea";
-import { Footer } from "antd/es/layout/layout";
 import Meta from "antd/es/card/Meta";
 import { GiAutoRepair } from "react-icons/gi";
 import { MdOutlineDesignServices } from "react-icons/md";
