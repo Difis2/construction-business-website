@@ -8,21 +8,19 @@ import { MdOutlineDesignServices, MdOutlineHomeWork } from "react-icons/md";
 
 export default function Servicos() {
   return (
-    <div className="bg-white h-screen">
+    <div className="bg-white h-screen fold-size">
       <NavBar></NavBar>
       <div className="bg-gray-100 section_container">
-        <div className="w-full justify-center flex flex-col items-center gap-20">
-          <div className="flex flex-col justify-center items-center">
-            <h1>Serviços</h1>
+        <div className="section_wrapper justify-center flex items-center flex-col">
+          <h1>Serviços</h1>
 
-            <p>Os nossos Serviços</p>
-            <Divider
-              className="divider"
-              style={{ width: "10px !important" }}
-            ></Divider>
-          </div>
+          <p>Os nossos Serviços</p>
+          <Divider
+            className="divider"
+            style={{ width: "10px !important" }}
+          ></Divider>
           <Row
-            className="flex justify-center items-center"
+            className="flex justify-center items-center mt-10"
             style={{ gap: "60px 80px" }}
           >
             <Col xs={32} sm={26} md={8} xl={6}>

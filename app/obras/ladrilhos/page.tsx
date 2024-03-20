@@ -6,10 +6,10 @@ import Meta from "antd/es/card/Meta";
 
 export default function Ladrilhos() {
   return (
-    <div className="bg-white h-screen">
+    <div className="bg-white h-screen fold-size">
       <NavBar></NavBar>
       <div className="bg-gray-100 section_container">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center section_wrapper">
           <h1>Ladrinhos</h1>
 
           <p>A nossa especialidade</p>
