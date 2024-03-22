@@ -57,7 +57,7 @@ export default function Home() {
     <div className="bg-white h-screen w-full fold-size">
       <NavBar></NavBar>
       <Carousel autoplay autoplaySpeed={1500}>
-        <div className="relative">
+        <div className="relative bg-gray-100 carousel-flex">
           <div className="carousel_text">Bem vindo</div>
           <img
             src="/imgs/carousel4.jpeg"
@@ -67,7 +67,7 @@ export default function Home() {
           <button className="carousel_button">Learn More</button>
         </div>
 
-        <div className="relative">
+        <div className="relative bg-gray-100 carousel-flex">
           <div className="carousel_text">Adeus</div>
           <img
             src="/imgs/carousel2.jpg"
@@ -77,7 +77,7 @@ export default function Home() {
           <button className="carousel_button">Explore Now</button>
         </div>
 
-        <div className="relative">
+        <div className="relative bg-gray-100 carousel-flex">
           <div className="carousel_text">Lorem Ipsum</div>
           <img
             src="/imgs/carousel3.jpg"
@@ -87,7 +87,7 @@ export default function Home() {
           <button className="carousel_button">Click Here</button>
         </div>
 
-        <div className="relative">
+        <div className="relative bg-gray-100 carousel-flex">
           <div className="carousel_text">Dolor Sit Amet</div>
           <img
             src="/imgs/carousel1.jpg"

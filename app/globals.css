@@ -136,6 +136,11 @@ p {
   width: 100%;
   height: 400px;
 }
+.carousel-flex {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
 
 .carousel_button {
   position: absolute;
@@ -291,4 +296,10 @@ Footer a:hover {
 }
 .section-subtitle {
   color: gray;
+}
+
+.border-contacts {
+  padding: 10px;
+  border-radius: 2%;
+  border: 2px solid black;
 }

@@ -57,9 +57,14 @@ export default function Contactos() {
             sm={10}
             md={10}
             xl={10}
-            className="text-black text-center w-full"
+            className="text-black text-center w-full border-contacts"
           >
-            <div className=" text-2xl font-bold ">Telefone</div>
+            <div className=" text-2xl font-bold ">
+              {" "}
+              <div className="flex flex-row justify-center items-center gap-4">
+                Telefone
+              </div>
+            </div>
             <div className=" text-lg mt-3">
               +351 961 443 378 <br /> (Chamada para a rede móvel nacional)
             </div>
@@ -69,10 +74,14 @@ export default function Contactos() {
             sm={10}
             md={10}
             xl={10}
-            className="text-black text-md text-center w-full"
+            className="text-black text-md text-center w-full border-contacts "
           >
-            <div className="text-2xl font-bold ">Email</div>
-            <div className="text-lg shrink-email mt-3">
+            <div className="text-2xl font-bold ">
+              <div className="flex flex-row justify-center items-center gap-2">
+                Email
+              </div>
+            </div>
+            <div className="text-lg shrink-email mt-5">
               geral.robustfabulous@gmail.com
             </div>
           </Col>
