@@ -265,7 +265,7 @@ export default function Home() {
             A nossa Localização!
           </div>
           <div className="flex justify-center items-center mt-20 flex-col">
-            {/* <MyAwesomeMap></MyAwesomeMap> */}
+            <MyAwesomeMap></MyAwesomeMap>
             <div className="text-black mt-10 font-bold text-xl text-center">
               Rua César de Oliveira 11a, 2710-725 Sintra
             </div>

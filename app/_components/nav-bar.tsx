@@ -35,10 +35,10 @@ const NavBar = () => {
     icon?.classList.toggle("open");
   }
   return (
-    <div className="w-full flex justify-center items-center h-48 bg-white nav-border">
+    <div className="w-full flex justify-center items-center h-48 bg-white nav-border px-10">
       <ul id="desktop-nav" className="flex flex-row gap-10 items-center ">
         <li>
-          <img className="w-52 h-40" src="/imgs/logo2.png" alt="Logo"></img>
+          <img className="nav-image" src="/imgs/logo2.png" alt="Logo"></img>
         </li>
         <li>
           <a href="/">Home</a>
@@ -69,7 +69,7 @@ const NavBar = () => {
       >
         <div>
           <img
-            className="w-52 h-40"
+            className="nav-image"
             src="/imgs/logo2.png"
             alt="Logo Hamburguer"
           ></img>

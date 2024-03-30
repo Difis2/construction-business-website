@@ -2,8 +2,13 @@
   #desktop-nav {
     display: none;
   }
+  
   #hamburguer-nav {
     display: flex;
+  }
+    .nav-image{
+    height: 160px !important;
+    width: 208px !important;
   }
   .about_gap {
     gap: 1rem;
@@ -28,6 +33,10 @@
   .about_img {
     width: 56%;
     height: 200px;
+  }
+  .nav-image{
+    height: 100px !important;
+    width: 120px !important;
   }
   .about_title {
     font-size: x-large;
@@ -60,6 +69,10 @@
   label {
     font-size: 12px !important;
     font-weight: 700;
+  }
+    .nav-image{
+    height: 100px !important;
+    width: 140px !important;
   }
   .button-top {
     height: 80px;

@@ -20,7 +20,7 @@ export default function Ladrilhos() {
         </div>
         <div className="mt-20 w-full flex justify-center flex-col gap-10 items-center">
           <Row className="flex justify-center" style={{ gap: "30px 70px" }}>
-            <Col span={6}>
+            <Col xs={20} sm={10} md={10} xl={6}>
               <Card
                 hoverable
                 cover={
@@ -70,7 +70,7 @@ export default function Ladrilhos() {
                 <Meta className="" title="Sintra" description="10/2023" />
               </Card>
             </Col>
-            <Col span={6}>
+            <Col xs={20} sm={10} md={10} xl={6}>
               <Card
                 hoverable
                 cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -81,7 +81,7 @@ export default function Ladrilhos() {
                 />
               </Card>
             </Col>
-            <Col span={6}>
+            <Col xs={20} sm={10} md={10} xl={6}>
               <Card
                 hoverable
                 cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -92,7 +92,7 @@ export default function Ladrilhos() {
                 />
               </Card>
             </Col>
-            <Col span={6}>
+            <Col xs={20} sm={10} md={10} xl={6}>
               <Card
                 hoverable
                 cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -103,7 +103,7 @@ export default function Ladrilhos() {
                 />
               </Card>
             </Col>
-            <Col span={6}>
+            <Col xs={20} sm={10} md={10} xl={6}>
               <Card
                 hoverable
                 cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -114,7 +114,7 @@ export default function Ladrilhos() {
                 />
               </Card>
             </Col>
-            <Col span={6}>
+            <Col xs={20} sm={10} md={10} xl={6}>
               <Card
                 hoverable
                 cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}

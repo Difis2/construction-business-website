@@ -303,3 +303,8 @@ Footer a:hover {
   border-radius: 2%;
   border: 2px solid black;
 }
+
+.nav-image{
+  height: 160px;
+  width: 208px;
+}
