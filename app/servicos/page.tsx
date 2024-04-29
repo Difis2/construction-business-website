@@ -34,11 +34,9 @@ export default function Servicos() {
                   ></Divider>
                 </div>
                 <div className="services-text">
-                  Acompanhamento de Arquitetura/Projetos Acompanhamento de
-                  Arquitetura/Projetos Acompanhamento de Arquitetura/Projetos
-                  Acompanhamento de Arquitetura/ProjetosAcompanhamento de
-                  Arquitetura/ProjetosAcompanhamento de
-                  Arquitetura/ProjetosAcompanhamento de Arquitetura/Projetos
+                  Proporcionar conforto, funcionalidade e segurança, criando um
+                  ambiente acolhedor e personalizado para os residentes
+                  desfrutarem de sua vida doméstica.
                 </div>
               </div>
             </Col>
@@ -53,11 +51,9 @@ export default function Servicos() {
                   ></Divider>
                 </div>
                 <div className="services-text">
-                  Acompanhamento de Arquitetura/Projetos Acompanhamento de
-                  Arquitetura/Projetos Acompanhamento de Arquitetura/Projetos
-                  Acompanhamento de Arquitetura/ProjetosAcompanhamento de
-                  Arquitetura/ProjetosAcompanhamento de
-                  Arquitetura/ProjetosAcompanhamento de Arquitetura/Projetos
+                  Corrigir problemas existentes e prevenir a ocorrência de
+                  novos, garantindo o bom funcionamento e a segurança dos
+                  espaços e equipamentos.
                 </div>
               </div>
             </Col>
@@ -74,11 +70,10 @@ export default function Servicos() {
                   ></Divider>
                 </div>
                 <div className="services-text">
-                  Acompanhamento de Arquitetura/Projetos Acompanhamento de
-                  Arquitetura/Projetos Acompanhamento de Arquitetura/Projetos
-                  Acompanhamento de Arquitetura/ProjetosAcompanhamento de
-                  Arquitetura/ProjetosAcompanhamento de
-                  Arquitetura/ProjetosAcompanhamento de Arquitetura/Projetos
+                  Parte fundamental do processo de construção civil. Envolve a
+                  supervisão e a coordenação das diferentes etapas do projeto
+                  arquitetônico, desde a concepção até a conclusão da
+                  construção.
                 </div>
               </div>
             </Col>
@@ -93,11 +88,11 @@ export default function Servicos() {
                   ></Divider>
                 </div>
                 <div className="services-text">
-                  Acompanhamento de Arquitetura/Projetos Acompanhamento de
-                  Arquitetura/Projetos Acompanhamento de Arquitetura/Projetos
-                  Acompanhamento de Arquitetura/ProjetosAcompanhamento de
-                  Arquitetura/ProjetosAcompanhamento de
-                  Arquitetura/ProjetosAcompanhamento de Arquitetura/Projetos
+                  Atualizações estéticas, como pintura, revestimentos e
+                  decoração, bem como alterações estruturais, como a
+                  reconfiguração de espaços internos, a adição de novos
+                  ambientes, a substituição de sistemas e a modernização de
+                  instalações.
                 </div>
               </div>
             </Col>
@@ -112,11 +107,9 @@ export default function Servicos() {
                   ></Divider>
                 </div>
                 <div className="services-text">
-                  Acompanhamento de Arquitetura/Projetos Acompanhamento de
-                  Arquitetura/Projetos Acompanhamento de Arquitetura/Projetos
-                  Acompanhamento de Arquitetura/ProjetosAcompanhamento de
-                  Arquitetura/ProjetosAcompanhamento de
-                  Arquitetura/ProjetosAcompanhamento de Arquitetura/Projetos
+                  A nossa especialidade! Variedade de opções de materiais, cores
+                  e padrões, e oferece serviços de instalação de alta qualidade
+                  para garantir resultados impressionantes.
                 </div>
               </div>
             </Col>

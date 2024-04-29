@@ -277,6 +277,7 @@ Footer a:hover {
 .services-text {
   color: black;
   text-align: center;
+  min-height: 126px;
 }
 
 .services-image {
@@ -304,7 +305,7 @@ Footer a:hover {
   border: 2px solid black;
 }
 
-.nav-image{
+.nav-image {
   height: 160px;
   width: 208px;
 }
