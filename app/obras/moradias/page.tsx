@@ -1,22 +1,15 @@
 "use client";
-import FooterComponent from "@/app/_components/footer-component";
 import NavBar from "@/app/_components/nav-bar";
-import { Card, Col, Divider, Image, Row } from "antd";
+import { Card, Col, Image, Row } from "antd";
 import Meta from "antd/es/card/Meta";
 
-export default function Ladrilhos() {
+export default function Moradias() {
   return (
-    <div className="bg-white h-screen fold-size">
+    <div className="bg-white h-screen">
       <NavBar></NavBar>
       <div className="bg-gray-100 section_container">
-        <div className="flex flex-col justify-center items-center section_wrapper">
-          <h1>Ladrinhos</h1>
-
-          <p>A nossa especialidade</p>
-          <Divider
-            className="divider"
-            style={{ width: "10px !important" }}
-          ></Divider>
+        <div className="flex flex-col items-center">
+          <h1>Moradias Unifamiliares</h1>
         </div>
         <div className="mt-20 w-full flex justify-center flex-col gap-10 items-center">
           <Row className="flex justify-center" style={{ gap: "30px 70px" }}>
@@ -34,40 +27,40 @@ export default function Ladrilhos() {
                   >
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/ladrilhos/obra1/obra1-1.jpeg"
+                      src="/imgs/Remodelacoes/obra1/obra1-1.jpeg"
                       style={{ maxHeight: "350px" }}
                       alt="imagem 1"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/ladrilhos/obra1/obra1-2.jpeg"
+                      src="/imgs/Remodelacoes/obra1/obra1-2.jpeg"
                       alt="imagem 2"
                     />
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/ladrilhos/obra1/obra1-3.jpeg"
+                      src="/imgs/Remodelacoes/obra1/obra1-3.jpeg"
                       style={{ display: "none" }}
                       alt="imagem 3"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/ladrilhos/obra1/obra1-4.jpeg"
+                      src="/imgs/Remodelacoes/obra1/obra1-4.jpeg"
                       alt="imagem 4"
                     />
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/ladrilhos/obra1/obra1-5.jpeg"
+                      src="/imgs/Remodelacoes/obra1/obra1-5.jpeg"
                       style={{ display: "none" }}
                       alt="imagem 5"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/ladrilhos/obra1/obra1-6.jpeg"
+                      src="/imgs/Remodelacoes/obra1/obra1-6.jpeg"
                       alt="imagem 6"
                     />
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/ladrilhos/obra1/obra1-7.jpeg"
+                      src="/imgs/Remodelacoes/obra1/obra1-7.jpeg"
                       style={{ display: "none" }}
                       alt="imagem 7"
                     />
@@ -77,7 +70,7 @@ export default function Ladrilhos() {
                 <Meta className="" title="Sintra" description="10/2023" />
               </Card>
             </Col>
-            <Col xs={20} sm={10} md={10} xl={6}>
+            <Col span={6}>
               <Card
                 hoverable
                 cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -88,7 +81,7 @@ export default function Ladrilhos() {
                 />
               </Card>
             </Col>
-            <Col xs={20} sm={10} md={10} xl={6}>
+            <Col span={6}>
               <Card
                 hoverable
                 cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -99,7 +92,7 @@ export default function Ladrilhos() {
                 />
               </Card>
             </Col>
-            <Col xs={20} sm={10} md={10} xl={6}>
+            <Col span={6}>
               <Card
                 hoverable
                 cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -110,7 +103,7 @@ export default function Ladrilhos() {
                 />
               </Card>
             </Col>
-            <Col xs={20} sm={10} md={10} xl={6}>
+            <Col span={6}>
               <Card
                 hoverable
                 cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -121,7 +114,7 @@ export default function Ladrilhos() {
                 />
               </Card>
             </Col>
-            <Col xs={20} sm={10} md={10} xl={6}>
+            <Col span={6}>
               <Card
                 hoverable
                 cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
@@ -135,7 +128,6 @@ export default function Ladrilhos() {
           </Row>
         </div>
       </div>
-      <FooterComponent></FooterComponent>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import NavBar from "@/app/_components/nav-bar";
 import { Card, Col, Image, Row } from "antd";
 import Meta from "antd/es/card/Meta";
 
-export default function Ladrilhos() {
+export default function Remodelacoes() {
   return (
     <div className="bg-white h-screen">
       <NavBar></NavBar>
@@ -13,7 +13,7 @@ export default function Ladrilhos() {
         </div>
         <div className="mt-20 w-full flex justify-center flex-col gap-10 items-center">
           <Row className="flex justify-center" style={{ gap: "30px 70px" }}>
-            <Col span={6}>
+            <Col xs={20} sm={10} md={10} xl={6}>
               <Card
                 hoverable
                 cover={
@@ -27,20 +27,25 @@ export default function Ladrilhos() {
                   >
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/carousel1.jpg"
+                      src="/imgs/Remodelacoes/obra1/obra1-1.jpeg"
+                      style={{ maxHeight: "350px" }}
+                      alt="imagem 1"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg"
+                      src="/imgs/Remodelacoes/obra1/obra1-2.jpeg"
+                      alt="imagem 2"
+                    />
+                    <Image
+                      className="w-full h-full object-cover"
+                      src="/imgs/Remodelacoes/obra1/obra1-3.jpeg"
+                      style={{ display: "none" }}
+                      alt="imagem 3"
                     />
                   </Image.PreviewGroup>
                 }
               >
-                <Meta
-                  className=""
-                  title="Canalização Ranholas, Sintra"
-                  description="10/2023"
-                />
+                <Meta className="" title="Sintra" description="10/2023" />
               </Card>
             </Col>
             <Col span={6}>

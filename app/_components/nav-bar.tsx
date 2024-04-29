@@ -12,8 +12,8 @@ const items: MenuProps["items"] = [
   {
     key: "2",
     label: (
-      <a rel="noopener noreferrer" href="/obras/canalizacoes">
-        Canalizações
+      <a rel="noopener noreferrer" href="/obras/reparos">
+        Reparos
       </a>
     ),
   },
@@ -22,6 +22,22 @@ const items: MenuProps["items"] = [
     label: (
       <a rel="noopener noreferrer" href="/obras/remodelacoes">
         Remodelações
+      </a>
+    ),
+  },
+  {
+    key: "4",
+    label: (
+      <a rel="noopener noreferrer" href="/obras/arquitetura">
+        Arquitetura
+      </a>
+    ),
+  },
+  {
+    key: "5",
+    label: (
+      <a rel="noopener noreferrer" href="/obras/moradias">
+        Moradias Unifamiliares
       </a>
     ),
   },
