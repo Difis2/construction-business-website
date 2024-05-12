@@ -28,7 +28,7 @@ export default function Arquitetura() {
                     <Image
                       className="w-full h-full object-cover"
                       src="/imgs/arquitetura/obra1/obra1-1.jpeg"
-                      style={{ maxHeight: "350px" }}
+                      style={{ maxHeight: "200px" }}
                     />
                     <Image
                       style={{ display: "none" }}
@@ -52,17 +52,8 @@ export default function Arquitetura() {
                   <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/arquitetura/obra1/obra1-1.jpeg"
-                      style={{ maxHeight: "350px" }}
-                    />
-                    <Image
-                      style={{ display: "none" }}
-                      src="/imgs/arquitetura/obra1/obra1-2.jpeg"
-                    />
-                    <Image
-                      className="w-full h-full object-cover"
-                      src="/imgs/arquitetura/obra1/obra1-3.jpeg"
-                      style={{ display: "none" }}
+                      src="/imgs/arquitetura/obra2/obra2-1.jpeg"
+                      style={{ maxHeight: "200px" }}
                     />
                   </Image.PreviewGroup>
                 }
@@ -77,17 +68,8 @@ export default function Arquitetura() {
                   <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/arquitetura/obra1/obra1-1.jpeg"
-                      style={{ maxHeight: "350px" }}
-                    />
-                    <Image
-                      style={{ display: "none" }}
-                      src="/imgs/arquitetura/obra1/obra1-2.jpeg"
-                    />
-                    <Image
-                      className="w-full h-full object-cover"
-                      src="/imgs/arquitetura/obra1/obra1-3.jpeg"
-                      style={{ display: "none" }}
+                      src="/imgs/arquitetura/obra3/obra3-1.jpeg"
+                      style={{ maxHeight: "200px" }}
                     />
                   </Image.PreviewGroup>
                 }
@@ -102,17 +84,8 @@ export default function Arquitetura() {
                   <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/arquitetura/obra1/obra1-1.jpeg"
-                      style={{ maxHeight: "350px" }}
-                    />
-                    <Image
-                      style={{ display: "none" }}
-                      src="/imgs/arquitetura/obra1/obra1-2.jpeg"
-                    />
-                    <Image
-                      className="w-full h-full object-cover"
-                      src="/imgs/arquitetura/obra1/obra1-3.jpeg"
-                      style={{ display: "none" }}
+                      src="/imgs/arquitetura/obra4/obra4-1.jpeg"
+                      style={{ maxHeight: "200px" }}
                     />
                   </Image.PreviewGroup>
                 }
@@ -127,17 +100,8 @@ export default function Arquitetura() {
                   <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/arquitetura/obra1/obra1-1.jpeg"
-                      style={{ maxHeight: "350px" }}
-                    />
-                    <Image
-                      style={{ display: "none" }}
-                      src="/imgs/arquitetura/obra1/obra1-2.jpeg"
-                    />
-                    <Image
-                      className="w-full h-full object-cover"
-                      src="/imgs/arquitetura/obra1/obra1-3.jpeg"
-                      style={{ display: "none" }}
+                      src="/imgs/arquitetura/obra5/obra5-1.jpeg"
+                      style={{ maxHeight: "200px" }}
                     />
                   </Image.PreviewGroup>
                 }
@@ -152,20 +116,9 @@ export default function Arquitetura() {
                   <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/arquitetura/obra1/obra1-1.jpeg"
+                      src="/imgs/arquitetura/obra6/obra6-1.jpeg"
                       alt="imagem 1"
-                      style={{ maxHeight: "350px" }}
-                    />
-                    <Image
-                      style={{ display: "none" }}
-                      alt="imagem 2"
-                      src="/imgs/arquitetura/obra1/obra1-2.jpeg"
-                    />
-                    <Image
-                      className="w-full h-full object-cover"
-                      src="/imgs/arquitetura/obra1/obra1-3.jpeg"
-                      style={{ display: "none" }}
-                      alt="imagem 3"
+                      style={{ maxHeight: "200px" }}
                     />
                   </Image.PreviewGroup>
                 }

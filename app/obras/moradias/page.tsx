@@ -28,7 +28,7 @@ export default function Moradias() {
                     <Image
                       className="w-full h-full object-cover"
                       src="/imgs/Remodelacoes/obra1/obra1-1.jpeg"
-                      style={{ maxHeight: "350px" }}
+                      style={{ maxHeight: "200px" }}
                       alt="imagem 1"
                     />
                     <Image
