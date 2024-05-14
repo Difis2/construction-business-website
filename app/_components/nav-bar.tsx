@@ -1,4 +1,5 @@
 import { Dropdown, MenuProps, Space } from "antd";
+import Image from "next/image";
 
 const items: MenuProps["items"] = [
   {
@@ -33,14 +34,6 @@ const items: MenuProps["items"] = [
       </a>
     ),
   },
-  {
-    key: "5",
-    label: (
-      <a rel="noopener noreferrer" href="/obras/moradias">
-        Moradias Unifamiliares
-      </a>
-    ),
-  },
 ];
 
 const NavBar = () => {
@@ -51,7 +44,7 @@ const NavBar = () => {
     icon?.classList.toggle("open");
   }
   return (
-    <div className="w-full flex justify-center items-center h-48 bg-white nav-border px-10">
+    <div className="w-full flex justify-center items-center h-40 bg-white nav-border px-10">
       <ul id="desktop-nav" className="flex flex-row gap-10 items-center ">
         <li>
           <img className="nav-image" src="/imgs/logo2.png" alt="Logo"></img>

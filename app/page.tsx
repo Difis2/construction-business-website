@@ -8,7 +8,7 @@ import {
   Checkbox,
   Col,
   DatePicker,
-  Divider,
+  Image,
   Form,
   Input,
   Row,
@@ -58,43 +58,35 @@ export default function Home() {
       <NavBar></NavBar>
       <Carousel autoplay autoplaySpeed={1500}>
         <div className="relative bg-gray-100 carousel-flex">
-          <div className="carousel_text">Bem vindo</div>
           <img
-            src="/imgs/carousel4.jpeg"
+            src="/imgs/arquitetura/obra1/obra1-1.jpeg"
             className="carousel_img"
             alt="Carousel4"
           ></img>
-          <button className="carousel_button">Learn More</button>
         </div>
 
         <div className="relative bg-gray-100 carousel-flex">
-          <div className="carousel_text">Adeus</div>
           <img
-            src="/imgs/carousel2.jpg"
+            src="/imgs/arquitetura/obra3/obra3-1.jpeg"
             className="carousel_img"
             alt="Carousel2"
           ></img>
-          <button className="carousel_button">Explore Now</button>
         </div>
 
         <div className="relative bg-gray-100 carousel-flex">
-          <div className="carousel_text">Lorem Ipsum</div>
           <img
-            src="/imgs/carousel3.jpg"
+            src="/imgs/arquitetura/obra4/obra4-1.jpeg"
             className="carousel_img"
             alt="Carousel3"
           ></img>
-          <button className="carousel_button">Click Here</button>
         </div>
 
         <div className="relative bg-gray-100 carousel-flex">
-          <div className="carousel_text">Dolor Sit Amet</div>
           <img
-            src="/imgs/carousel1.jpg"
+            src="/imgs/arquitetura/obra6/obra6-1.jpeg"
             className="carousel_img"
             alt="Carousel4"
           ></img>
-          <button className="carousel_button">Get Started</button>
         </div>
       </Carousel>
       <div id="empresa" className="bg-gray-100 section_container">
@@ -141,73 +133,239 @@ export default function Home() {
               <Col xs={20} sm={10} md={10} xl={6}>
                 <Card
                   hoverable
-                  cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
+                  cover={
+                    <Image.PreviewGroup
+                      preview={{
+                        onChange: (current, prev) =>
+                          console.log(
+                            `current index: ${current}, prev index: ${prev}`
+                          ),
+                      }}
+                    >
+                      <Image
+                        className="w-full h-full object-cover"
+                        src="/imgs/ladrilhos/obra2/obra2-1.jpeg"
+                        style={{ maxHeight: "200px" }}
+                        alt="imagem 1"
+                      />
+                      <Image
+                        style={{ display: "none" }}
+                        src="/imgs/ladrilhos/obra2/obra2-2.jpeg"
+                        alt="imagem 2"
+                      />
+                      <Image
+                        className="w-full h-full object-cover"
+                        src="/imgs/ladrilhos/obra2/obra2-3.jpeg"
+                        style={{ display: "none" }}
+                        alt="imagem 3"
+                      />
+                      <Image
+                        style={{ display: "none" }}
+                        src="/imgs/ladrilhos/obra2/obra2-4.jpeg"
+                        alt="imagem 4"
+                      />
+                      <Image
+                        className="w-full h-full object-cover"
+                        src="/imgs/ladrilhos/obra2/obra2-5.jpeg"
+                        style={{ display: "none" }}
+                        alt="imagem 5"
+                      />
+                    </Image.PreviewGroup>
+                  }
                 >
-                  <Meta
-                    title="Europe Street beat"
-                    description="www.instagram.com"
-                  />
+                  <Meta className="" title="Sintra" description="10/2023" />
                 </Card>
               </Col>
               <Col xs={20} sm={10} md={10} xl={6}>
                 <Card
                   hoverable
-                  cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
+                  cover={
+                    <Image.PreviewGroup
+                      preview={{
+                        onChange: (current, prev) =>
+                          console.log(
+                            `current index: ${current}, prev index: ${prev}`
+                          ),
+                      }}
+                    >
+                      <Image
+                        className="w-full h-full object-cover"
+                        src="/imgs/reparos/obra1/obra1-1.jpeg"
+                        style={{ maxHeight: "200px" }}
+                        alt="imagem 1"
+                      />
+                      <Image
+                        style={{ display: "none" }}
+                        src="/imgs/reparos/obra1/obra1-2.jpeg"
+                        alt="imagem 2"
+                      />
+                    </Image.PreviewGroup>
+                  }
                 >
-                  <Meta
-                    title="Europe Street beat"
-                    description="www.instagram.com"
-                  />
+                  <Meta className="" title="Sintra" description="10/2023" />
                 </Card>
               </Col>
               <Col xs={20} sm={10} md={10} xl={6}>
                 <Card
                   hoverable
-                  cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
+                  cover={
+                    <Image.PreviewGroup
+                      preview={{
+                        onChange: (current, prev) =>
+                          console.log(
+                            `current index: ${current}, prev index: ${prev}`
+                          ),
+                      }}
+                    >
+                      <Image
+                        className="w-full h-full object-cover"
+                        src="/imgs/Remodelacoes/obra1/obra1-1.jpeg"
+                        style={{ maxHeight: "200px" }}
+                        alt="imagem 1"
+                      />
+                      <Image
+                        style={{ display: "none" }}
+                        src="/imgs/Remodelacoes/obra1/obra1-2.jpeg"
+                        alt="imagem 2"
+                      />
+                      <Image
+                        className="w-full h-full object-cover"
+                        src="/imgs/Remodelacoes/obra1/obra1-3.jpeg"
+                        style={{ display: "none" }}
+                        alt="imagem 3"
+                      />
+                    </Image.PreviewGroup>
+                  }
                 >
-                  <Meta
-                    title="Europe Street beat"
-                    description="www.instagram.com"
-                  />
+                  <Meta className="" title="Sintra" description="10/2023" />
                 </Card>
               </Col>
               <Col xs={20} sm={10} md={10} xl={6}>
                 <Card
                   hoverable
-                  cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
+                  cover={
+                    <Image.PreviewGroup>
+                      <Image
+                        className="w-full h-full object-cover"
+                        src="/imgs/arquitetura/obra1/obra1-1.jpeg"
+                        style={{ maxHeight: "200px" }}
+                        alt="imagem 1"
+                      />
+                      <Image
+                        style={{ display: "none" }}
+                        src="/imgs/arquitetura/obra1/obra1-2.jpeg"
+                        alt="imagem 2"
+                      />
+                      <Image
+                        className="w-full h-full object-cover"
+                        src="/imgs/arquitetura/obra1/obra1-3.jpeg"
+                        style={{ display: "none" }}
+                        alt="imagem 3"
+                      />
+                    </Image.PreviewGroup>
+                  }
                 >
-                  <Meta
-                    title="Europe Street beat"
-                    description="www.instagram.com"
-                  />
+                  <Meta className="" title="Sintra" description="10/2023" />
                 </Card>
               </Col>
               <Col xs={20} sm={10} md={10} xl={6}>
                 <Card
                   hoverable
-                  cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
+                  cover={
+                    <Image.PreviewGroup
+                      preview={{
+                        onChange: (current, prev) =>
+                          console.log(
+                            `current index: ${current}, prev index: ${prev}`
+                          ),
+                      }}
+                    >
+                      <Image
+                        className="w-full h-full object-cover"
+                        src="/imgs/ladrilhos/obra1/obra1-1.jpeg"
+                        style={{ maxHeight: "200px" }}
+                        alt="imagem 1"
+                      />
+                      <Image
+                        style={{ display: "none" }}
+                        src="/imgs/ladrilhos/obra1/obra1-2.jpeg"
+                        alt="imagem 2"
+                      />
+                      <Image
+                        className="w-full h-full object-cover"
+                        src="/imgs/ladrilhos/obra1/obra1-3.jpeg"
+                        style={{ display: "none" }}
+                        alt="imagem 3"
+                      />
+                      <Image
+                        style={{ display: "none" }}
+                        src="/imgs/ladrilhos/obra1/obra1-4.jpeg"
+                        alt="imagem 4"
+                      />
+                      <Image
+                        className="w-full h-full object-cover"
+                        src="/imgs/ladrilhos/obra1/obra1-5.jpeg"
+                        style={{ display: "none" }}
+                        alt="imagem 5"
+                      />
+                      <Image
+                        style={{ display: "none" }}
+                        src="/imgs/ladrilhos/obra1/obra1-6.jpeg"
+                        alt="imagem 6"
+                      />
+                      <Image
+                        className="w-full h-full object-cover"
+                        src="/imgs/ladrilhos/obra1/obra1-7.jpeg"
+                        style={{ display: "none" }}
+                        alt="imagem 7"
+                      />
+                    </Image.PreviewGroup>
+                  }
                 >
-                  <Meta
-                    title="Europe Street beat"
-                    description="www.instagram.com"
-                  />
+                  <Meta className="" title="Sintra" description="10/2023" />
                 </Card>
               </Col>
               <Col xs={20} sm={10} md={10} xl={6}>
                 <Card
                   hoverable
-                  cover={<img src="/imgs/carousel1.jpg" alt="Carousel5"></img>}
+                  cover={
+                    <Image.PreviewGroup
+                      preview={{
+                        onChange: (current, prev) =>
+                          console.log(
+                            `current index: ${current}, prev index: ${prev}`
+                          ),
+                      }}
+                    >
+                      <Image
+                        className="w-full h-full object-cover"
+                        src="/imgs/ladrilhos/obra4/obra4-1.jpeg"
+                        style={{ maxHeight: "200px" }}
+                        alt="imagem 1"
+                      />
+                      <Image
+                        style={{ display: "none" }}
+                        src="/imgs/ladrilhos/obra4/obra4-2.jpeg"
+                        alt="imagem 2"
+                      />
+                      <Image
+                        className="w-full h-full object-cover"
+                        src="/imgs/ladrilhos/obra4/obra4-3.jpeg"
+                        style={{ display: "none" }}
+                        alt="imagem 3"
+                      />
+                      <Image
+                        style={{ display: "none" }}
+                        src="/imgs/ladrilhos/obra4/obra4-4.jpeg"
+                        alt="imagem 4"
+                      />
+                    </Image.PreviewGroup>
+                  }
                 >
-                  <Meta
-                    title="Europe Street beat"
-                    description="www.instagram.com"
-                  />
+                  <Meta className="" title="Sintra" description="10/2023" />
                 </Card>
               </Col>
             </Row>
-            <Button href="/obras" className="w-fit" color="orange">
-              Ver mais...
-            </Button>
           </div>
         </div>
       </div>

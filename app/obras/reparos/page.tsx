@@ -166,6 +166,11 @@ export default function Reparos() {
                         style={{ maxHeight: "200px" }}
                         alt="imagem 1"
                       />
+                      <Image
+                        style={{ display: "none" }}
+                        src="/imgs/reparos/obra6/obra6-2.jpeg"
+                        alt="imagem 2"
+                      />
                     </Image.PreviewGroup>
                   }
                 >

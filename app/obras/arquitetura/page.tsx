@@ -29,15 +29,18 @@ export default function Arquitetura() {
                       className="w-full h-full object-cover"
                       src="/imgs/arquitetura/obra1/obra1-1.jpeg"
                       style={{ maxHeight: "200px" }}
+                      alt="imagem 1"
                     />
                     <Image
                       style={{ display: "none" }}
                       src="/imgs/arquitetura/obra1/obra1-2.jpeg"
+                      alt="imagem 2"
                     />
                     <Image
                       className="w-full h-full object-cover"
                       src="/imgs/arquitetura/obra1/obra1-3.jpeg"
                       style={{ display: "none" }}
+                      alt="imagem 3"
                     />
                   </Image.PreviewGroup>
                 }
@@ -54,6 +57,7 @@ export default function Arquitetura() {
                       className="w-full h-full object-cover"
                       src="/imgs/arquitetura/obra2/obra2-1.jpeg"
                       style={{ maxHeight: "200px" }}
+                      alt="imagem 1"
                     />
                   </Image.PreviewGroup>
                 }
@@ -70,6 +74,7 @@ export default function Arquitetura() {
                       className="w-full h-full object-cover"
                       src="/imgs/arquitetura/obra3/obra3-1.jpeg"
                       style={{ maxHeight: "200px" }}
+                      alt="imagem 1"
                     />
                   </Image.PreviewGroup>
                 }
@@ -86,6 +91,7 @@ export default function Arquitetura() {
                       className="w-full h-full object-cover"
                       src="/imgs/arquitetura/obra4/obra4-1.jpeg"
                       style={{ maxHeight: "200px" }}
+                      alt="imagem 1"
                     />
                   </Image.PreviewGroup>
                 }
@@ -102,6 +108,7 @@ export default function Arquitetura() {
                       className="w-full h-full object-cover"
                       src="/imgs/arquitetura/obra5/obra5-1.jpeg"
                       style={{ maxHeight: "200px" }}
+                      alt="imagem 1"
                     />
                   </Image.PreviewGroup>
                 }

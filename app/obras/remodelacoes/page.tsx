@@ -111,6 +111,182 @@ export default function Remodelacoes() {
                 <Meta className="" title="Sintra" description="10/2023" />
               </Card>
             </Col>
+            <Col xs={20} sm={10} md={10} xl={6}>
+              <Card
+                hoverable
+                cover={
+                  <Image.PreviewGroup
+                    preview={{
+                      onChange: (current, prev) =>
+                        console.log(
+                          `current index: ${current}, prev index: ${prev}`
+                        ),
+                    }}
+                  >
+                    <Image
+                      className="w-full h-full object-cover"
+                      src="/imgs/Remodelacoes/obra3/obra3-1.jpeg"
+                      style={{ maxHeight: "200px" }}
+                      alt="imagem 1"
+                    />
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra3/obra3-2.jpeg"
+                      alt="imagem 2"
+                    />
+                  </Image.PreviewGroup>
+                }
+              >
+                <Meta className="" title="Sintra" description="10/2023" />
+              </Card>
+            </Col>
+            <Col xs={20} sm={10} md={10} xl={6}>
+              <Card
+                hoverable
+                cover={
+                  <Image.PreviewGroup
+                    preview={{
+                      onChange: (current, prev) =>
+                        console.log(
+                          `current index: ${current}, prev index: ${prev}`
+                        ),
+                    }}
+                  >
+                    <Image
+                      className="w-full h-full object-cover"
+                      src="/imgs/Remodelacoes/obra4/obra4-1.jpeg"
+                      style={{ maxHeight: "200px" }}
+                      alt="imagem 1"
+                    />
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra4/obra4-2.jpeg"
+                      alt="imagem 2"
+                    />
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra4/obra4-3.jpeg"
+                      alt="imagem 3"
+                    />
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra4/obra4-4.jpeg"
+                      alt="imagem 4"
+                    />{" "}
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra4/obra4-5.jpeg"
+                      alt="imagem 5"
+                    />
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra4/obra4-6.jpeg"
+                      alt="imagem 6"
+                    />
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra4/obra4-7.jpeg"
+                      alt="imagem 7"
+                    />
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra4/obra4-8.jpeg"
+                      alt="imagem 8"
+                    />
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra4/obra4-9.jpeg"
+                      alt="imagem 9"
+                    />
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra4/obra4-10.jpeg"
+                      alt="imagem 10"
+                    />
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra4/obra4-11.jpeg"
+                      alt="imagem 11"
+                    />
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra4/obra4-12.jpeg"
+                      alt="imagem 12"
+                    />
+                  </Image.PreviewGroup>
+                }
+              >
+                <Meta className="" title="Sintra" description="10/2023" />
+              </Card>
+            </Col>
+            <Col xs={20} sm={10} md={10} xl={6}>
+              <Card
+                hoverable
+                cover={
+                  <Image.PreviewGroup
+                    preview={{
+                      onChange: (current, prev) =>
+                        console.log(
+                          `current index: ${current}, prev index: ${prev}`
+                        ),
+                    }}
+                  >
+                    <Image
+                      className="w-full h-full object-cover"
+                      src="/imgs/Remodelacoes/obra5/obra5-1.jpeg"
+                      style={{ maxHeight: "200px" }}
+                      alt="imagem 1"
+                    />
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra5/obra5-2.jpeg"
+                      alt="imagem 2"
+                    />
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra5/obra5-3.jpeg"
+                      alt="imagem 3"
+                    />
+                  </Image.PreviewGroup>
+                }
+              >
+                <Meta className="" title="Sintra" description="10/2023" />
+              </Card>
+            </Col>
+            <Col xs={20} sm={10} md={10} xl={6}>
+              <Card
+                hoverable
+                cover={
+                  <Image.PreviewGroup
+                    preview={{
+                      onChange: (current, prev) =>
+                        console.log(
+                          `current index: ${current}, prev index: ${prev}`
+                        ),
+                    }}
+                  >
+                    <Image
+                      className="w-full h-full object-cover"
+                      src="/imgs/Remodelacoes/obra6/obra6-1.jpeg"
+                      style={{ maxHeight: "200px" }}
+                      alt="imagem 1"
+                    />
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra6/obra6-2.jpeg"
+                      alt="imagem 2"
+                    />
+                    <Image
+                      style={{ display: "none" }}
+                      src="/imgs/Remodelacoes/obra6/obra6-3.jpeg"
+                      alt="imagem 3"
+                    />
+                  </Image.PreviewGroup>
+                }
+              >
+                <Meta className="" title="Sintra" description="10/2023" />
+              </Card>
+            </Col>
           </Row>
         </div>
       </div>
