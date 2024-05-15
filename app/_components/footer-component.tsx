@@ -33,12 +33,12 @@ const FooterComponent = () => {
               Robust and Fabulous, Lda
             </div>
             <div className="">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              O <b>Robust&Fabulous</b> teve suas origens modestas <b>em 1998</b>
+              , quando um grupo de empreendedores apaixonados por arquitetura e
+              design se uniu com o objetivo de transformar espaços e tornar
+              realidade <b>os sonhos dos nossos clientes</b>. Desde então,{" "}
+              <b>Robust&Fabulous </b>
+              tem sido sinônimo de excelência em construção e remodelação.
             </div>
           </Col>
           <Col xs={20} sm={10} md={10} xl={6}>

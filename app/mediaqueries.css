@@ -2,13 +2,17 @@
   #desktop-nav {
     display: none;
   }
-  
+
   #hamburguer-nav {
     display: flex;
   }
-    .nav-image{
-    height: 160px !important;
+  .nav-image {
+    height: 130px !important;
     width: 208px !important;
+  }
+  .about-us-text {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
   .about_gap {
     gap: 1rem;
@@ -34,7 +38,7 @@
     width: 56%;
     height: 200px;
   }
-  .nav-image{
+  .nav-image {
     height: 100px !important;
     width: 120px !important;
   }
@@ -71,7 +75,7 @@
     font-size: 12px !important;
     font-weight: 700;
   }
-    .nav-image{
+  .nav-image {
     height: 100px !important;
     width: 140px !important;
   }
