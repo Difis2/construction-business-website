@@ -42,9 +42,7 @@ export default function Reparos() {
                       />
                     </Image.PreviewGroup>
                   }
-                >
-                  <Meta className="" title="Sintra" description="10/2023" />
-                </Card>
+                ></Card>
               </Col>
 
               <Col xs={20} sm={10} md={10} xl={6}>
@@ -67,9 +65,7 @@ export default function Reparos() {
                       />
                     </Image.PreviewGroup>
                   }
-                >
-                  <Meta className="" title="Sintra" description="10/2023" />
-                </Card>
+                ></Card>
               </Col>
               <Col xs={20} sm={10} md={10} xl={6}>
                 <Card
@@ -91,9 +87,7 @@ export default function Reparos() {
                       />
                     </Image.PreviewGroup>
                   }
-                >
-                  <Meta className="" title="Sintra" description="10/2023" />
-                </Card>
+                ></Card>
               </Col>
               <Col xs={20} sm={10} md={10} xl={6}>
                 <Card
@@ -115,9 +109,7 @@ export default function Reparos() {
                       />
                     </Image.PreviewGroup>
                   }
-                >
-                  <Meta className="" title="Sintra" description="10/2023" />
-                </Card>
+                ></Card>
               </Col>
               <Col xs={20} sm={10} md={10} xl={6}>
                 <Card
@@ -144,9 +136,7 @@ export default function Reparos() {
                       />
                     </Image.PreviewGroup>
                   }
-                >
-                  <Meta className="" title="Sintra" description="10/2023" />
-                </Card>
+                ></Card>
               </Col>
               <Col xs={20} sm={10} md={10} xl={6}>
                 <Card
@@ -173,9 +163,7 @@ export default function Reparos() {
                       />
                     </Image.PreviewGroup>
                   }
-                >
-                  <Meta className="" title="Sintra" description="10/2023" />
-                </Card>
+                ></Card>
               </Col>
             </Row>
           </div>

@@ -66,9 +66,7 @@ export default function Moradias() {
                     />
                   </Image.PreviewGroup>
                 }
-              >
-                <Meta className="" title="Sintra" description="10/2023" />
-              </Card>
+              ></Card>
             </Col>
             <Col span={6}>
               <Card
