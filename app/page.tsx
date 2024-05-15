@@ -75,7 +75,7 @@ export default function Home() {
 
         <div className="relative bg-gray-100 carousel-flex">
           <img
-            src="/imgs/arquitetura/obra4/obra4-1.jpeg"
+            src="/imgs/ladrilhos/obra4/obra4-2.jpeg"
             className="carousel_img"
             alt="Carousel3"
           ></img>
@@ -97,7 +97,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center w-full items-center mt-16 about_gap">
             <img
-              src="/imgs/carousel1.jpg"
+              src="/imgs/arquitetura/obra4/obra4-1.jpeg"
               className="about_img"
               alt="Carousel5"
             ></img>

@@ -2,6 +2,10 @@
   #desktop-nav {
     display: none;
   }
+  .carousel_img {
+    width: 800px;
+    height: 500px;
+  }
 
   #hamburguer-nav {
     display: flex;
@@ -29,7 +33,7 @@
 }
 @media screen and (min-width: 1400px) {
   .carousel_img {
-    width: 60%;
+    width: 800px;
     height: 500px;
   }
 }
@@ -37,6 +41,10 @@
   .about_img {
     width: 56%;
     height: 200px;
+  }
+  .carousel_img {
+    width: 100%;
+    height: 300px;
   }
   .nav-image {
     height: 100px !important;

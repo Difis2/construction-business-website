@@ -133,8 +133,8 @@ p {
 }
 
 .carousel_img {
-  width: 50%;
-  height: 400px;
+  width: 670px;
+  height: 500px;
 }
 .carousel-flex {
   display: flex !important;
@@ -170,6 +170,7 @@ p {
 
 .about_img {
   width: 70%;
+  border-radius: 10%;
   height: 500px;
 }
 .about_gap {

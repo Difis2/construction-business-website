@@ -5,13 +5,13 @@ import NavBar from "../_components/nav-bar";
 import useIntersectionObserver from "../hooks/useIntersitionObserver";
 
 export default function Empresa() {
-  const [card1Ref, card1Visible, card1Intersecting] = useIntersectionObserver({
+  const [card1Ref, card1Visible] = useIntersectionObserver({
     threshold: 1,
   });
-  const [card2Ref, card2Visible, card2Intersecting] = useIntersectionObserver({
+  const [card2Ref, card2Visible] = useIntersectionObserver({
     threshold: 1,
   });
-  const [card3Ref, card3Visible, card3Intersecting] = useIntersectionObserver({
+  const [card3Ref, card3Visible] = useIntersectionObserver({
     threshold: 1,
   });
   return (
