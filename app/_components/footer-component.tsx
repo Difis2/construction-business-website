@@ -67,9 +67,6 @@ const FooterComponent = () => {
               <a className="text-black" href="/empresa">
                 Empresa
               </a>
-              <a className="text-black" href="/obras">
-                Obras
-              </a>
               <a className="text-black" href="/servicos">
                 Serviços
               </a>
