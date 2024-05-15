@@ -17,28 +17,21 @@ export default function Remodelacoes() {
               <Card
                 hoverable
                 cover={
-                  <Image.PreviewGroup
-                    preview={{
-                      onChange: (current, prev) =>
-                        console.log(
-                          `current index: ${current}, prev index: ${prev}`
-                        ),
-                    }}
-                  >
+                  <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/Remodelacoes/obra1/obra1-1.jpeg"
+                      src="/imgs/remodelacoes/obra1/obra1-1.jpeg"
                       style={{ maxHeight: "200px" }}
                       alt="imagem 1"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra1/obra1-2.jpeg"
+                      src="/imgs/remodelacoes/obra1/obra1-2.jpeg"
                       alt="imagem 2"
                     />
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/Remodelacoes/obra1/obra1-3.jpeg"
+                      src="/imgs/remodelacoes/obra1/obra1-3.jpeg"
                       style={{ display: "none" }}
                       alt="imagem 3"
                     />
@@ -50,56 +43,49 @@ export default function Remodelacoes() {
               <Card
                 hoverable
                 cover={
-                  <Image.PreviewGroup
-                    preview={{
-                      onChange: (current, prev) =>
-                        console.log(
-                          `current index: ${current}, prev index: ${prev}`
-                        ),
-                    }}
-                  >
+                  <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/Remodelacoes/obra2/obra2-1.jpeg"
+                      src="/imgs/remodelacoes/obra2/obra2-1.jpeg"
                       style={{ maxHeight: "200px" }}
                       alt="imagem 1"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra2/obra2-2.jpeg"
+                      src="/imgs/remodelacoes/obra2/obra2-2.jpeg"
                       alt="imagem 2"
                     />
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/Remodelacoes/obra2/obra2-3.jpeg"
+                      src="/imgs/remodelacoes/obra2/obra2-3.jpeg"
                       style={{ display: "none" }}
                       alt="imagem 3"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra2/obra2-4.jpeg"
+                      src="/imgs/remodelacoes/obra2/obra2-4.jpeg"
                       alt="imagem 2"
                     />
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/Remodelacoes/obra2/obra2-5.jpeg"
+                      src="/imgs/remodelacoes/obra2/obra2-5.jpeg"
                       style={{ display: "none" }}
                       alt="imagem 3"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra2/obra2-6.jpeg"
+                      src="/imgs/remodelacoes/obra2/obra2-6.jpeg"
                       alt="imagem 2"
                     />
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/Remodelacoes/obra2/obra2-7.jpeg"
+                      src="/imgs/remodelacoes/obra2/obra2-7.jpeg"
                       style={{ display: "none" }}
                       alt="imagem 3"
                     />
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/Remodelacoes/obra2/obra2-8.jpeg"
+                      src="/imgs/remodelacoes/obra2/obra2-8.jpeg"
                       style={{ display: "none" }}
                       alt="imagem 3"
                     />
@@ -111,23 +97,16 @@ export default function Remodelacoes() {
               <Card
                 hoverable
                 cover={
-                  <Image.PreviewGroup
-                    preview={{
-                      onChange: (current, prev) =>
-                        console.log(
-                          `current index: ${current}, prev index: ${prev}`
-                        ),
-                    }}
-                  >
+                  <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/Remodelacoes/obra3/obra3-1.jpeg"
+                      src="/imgs/remodelacoes/obra3/obra3-1.jpeg"
                       style={{ maxHeight: "200px" }}
                       alt="imagem 1"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra3/obra3-2.jpeg"
+                      src="/imgs/remodelacoes/obra3/obra3-2.jpeg"
                       alt="imagem 2"
                     />
                   </Image.PreviewGroup>
@@ -138,73 +117,66 @@ export default function Remodelacoes() {
               <Card
                 hoverable
                 cover={
-                  <Image.PreviewGroup
-                    preview={{
-                      onChange: (current, prev) =>
-                        console.log(
-                          `current index: ${current}, prev index: ${prev}`
-                        ),
-                    }}
-                  >
+                  <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/Remodelacoes/obra4/obra4-1.jpeg"
+                      src="/imgs/remodelacoes/obra4/obra4-1.jpeg"
                       style={{ maxHeight: "200px" }}
                       alt="imagem 1"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra4/obra4-2.jpeg"
+                      src="/imgs/remodelacoes/obra4/obra4-2.jpeg"
                       alt="imagem 2"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra4/obra4-3.jpeg"
+                      src="/imgs/remodelacoes/obra4/obra4-3.jpeg"
                       alt="imagem 3"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra4/obra4-4.jpeg"
+                      src="/imgs/remodelacoes/obra4/obra4-4.jpeg"
                       alt="imagem 4"
                     />{" "}
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra4/obra4-5.jpeg"
+                      src="/imgs/remodelacoes/obra4/obra4-5.jpeg"
                       alt="imagem 5"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra4/obra4-6.jpeg"
+                      src="/imgs/remodelacoes/obra4/obra4-6.jpeg"
                       alt="imagem 6"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra4/obra4-7.jpeg"
+                      src="/imgs/remodelacoes/obra4/obra4-7.jpeg"
                       alt="imagem 7"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra4/obra4-8.jpeg"
+                      src="/imgs/remodelacoes/obra4/obra4-8.jpeg"
                       alt="imagem 8"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra4/obra4-9.jpeg"
+                      src="/imgs/remodelacoes/obra4/obra4-9.jpeg"
                       alt="imagem 9"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra4/obra4-10.jpeg"
+                      src="/imgs/remodelacoes/obra4/obra4-10.jpeg"
                       alt="imagem 10"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra4/obra4-11.jpeg"
+                      src="/imgs/remodelacoes/obra4/obra4-11.jpeg"
                       alt="imagem 11"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra4/obra4-12.jpeg"
+                      src="/imgs/remodelacoes/obra4/obra4-12.jpeg"
                       alt="imagem 12"
                     />
                   </Image.PreviewGroup>
@@ -215,28 +187,21 @@ export default function Remodelacoes() {
               <Card
                 hoverable
                 cover={
-                  <Image.PreviewGroup
-                    preview={{
-                      onChange: (current, prev) =>
-                        console.log(
-                          `current index: ${current}, prev index: ${prev}`
-                        ),
-                    }}
-                  >
+                  <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/Remodelacoes/obra5/obra5-1.jpeg"
+                      src="/imgs/remodelacoes/obra5/obra5-1.jpeg"
                       style={{ maxHeight: "200px" }}
                       alt="imagem 1"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra5/obra5-2.jpeg"
+                      src="/imgs/remodelacoes/obra5/obra5-2.jpeg"
                       alt="imagem 2"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra5/obra5-3.jpeg"
+                      src="/imgs/remodelacoes/obra5/obra5-3.jpeg"
                       alt="imagem 3"
                     />
                   </Image.PreviewGroup>
@@ -247,28 +212,21 @@ export default function Remodelacoes() {
               <Card
                 hoverable
                 cover={
-                  <Image.PreviewGroup
-                    preview={{
-                      onChange: (current, prev) =>
-                        console.log(
-                          `current index: ${current}, prev index: ${prev}`
-                        ),
-                    }}
-                  >
+                  <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
-                      src="/imgs/Remodelacoes/obra6/obra6-1.jpeg"
+                      src="/imgs/remodelacoes/obra6/obra6-1.jpeg"
                       style={{ maxHeight: "200px" }}
                       alt="imagem 1"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra6/obra6-2.jpeg"
+                      src="/imgs/remodelacoes/obra6/obra6-2.jpeg"
                       alt="imagem 2"
                     />
                     <Image
                       style={{ display: "none" }}
-                      src="/imgs/Remodelacoes/obra6/obra6-3.jpeg"
+                      src="/imgs/remodelacoes/obra6/obra6-3.jpeg"
                       alt="imagem 3"
                     />
                   </Image.PreviewGroup>

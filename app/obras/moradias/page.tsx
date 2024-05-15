@@ -17,14 +17,7 @@ export default function Moradias() {
               <Card
                 hoverable
                 cover={
-                  <Image.PreviewGroup
-                    preview={{
-                      onChange: (current, prev) =>
-                        console.log(
-                          `current index: ${current}, prev index: ${prev}`
-                        ),
-                    }}
-                  >
+                  <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
                       src="/imgs/Remodelacoes/obra1/obra1-1.jpeg"

@@ -2,7 +2,6 @@
 import FooterComponent from "@/app/_components/footer-component";
 import NavBar from "@/app/_components/nav-bar";
 import { Card, Col, Divider, Image, Row } from "antd";
-import Meta from "antd/es/card/Meta";
 
 export default function Reparos() {
   return (
@@ -21,14 +20,7 @@ export default function Reparos() {
                 <Card
                   hoverable
                   cover={
-                    <Image.PreviewGroup
-                      preview={{
-                        onChange: (current, prev) =>
-                          console.log(
-                            `current index: ${current}, prev index: ${prev}`
-                          ),
-                      }}
-                    >
+                    <Image.PreviewGroup>
                       <Image
                         className="w-full h-full object-cover"
                         src="/imgs/reparos/obra1/obra1-1.jpeg"
@@ -49,14 +41,7 @@ export default function Reparos() {
                 <Card
                   hoverable
                   cover={
-                    <Image.PreviewGroup
-                      preview={{
-                        onChange: (current, prev) =>
-                          console.log(
-                            `current index: ${current}, prev index: ${prev}`
-                          ),
-                      }}
-                    >
+                    <Image.PreviewGroup>
                       <Image
                         className="w-full h-full object-cover"
                         src="/imgs/reparos/obra2/obra2-1.jpeg"
@@ -71,14 +56,7 @@ export default function Reparos() {
                 <Card
                   hoverable
                   cover={
-                    <Image.PreviewGroup
-                      preview={{
-                        onChange: (current, prev) =>
-                          console.log(
-                            `current index: ${current}, prev index: ${prev}`
-                          ),
-                      }}
-                    >
+                    <Image.PreviewGroup>
                       <Image
                         className="w-full h-full object-cover"
                         src="/imgs/reparos/obra3/obra3-1.jpeg"
@@ -93,14 +71,7 @@ export default function Reparos() {
                 <Card
                   hoverable
                   cover={
-                    <Image.PreviewGroup
-                      preview={{
-                        onChange: (current, prev) =>
-                          console.log(
-                            `current index: ${current}, prev index: ${prev}`
-                          ),
-                      }}
-                    >
+                    <Image.PreviewGroup>
                       <Image
                         className="w-full h-full object-cover"
                         src="/imgs/reparos/obra4/obra4-1.jpeg"
@@ -115,14 +86,7 @@ export default function Reparos() {
                 <Card
                   hoverable
                   cover={
-                    <Image.PreviewGroup
-                      preview={{
-                        onChange: (current, prev) =>
-                          console.log(
-                            `current index: ${current}, prev index: ${prev}`
-                          ),
-                      }}
-                    >
+                    <Image.PreviewGroup>
                       <Image
                         className="w-full h-full object-cover"
                         src="/imgs/reparos/obra5/obra5-1.jpeg"
@@ -142,14 +106,7 @@ export default function Reparos() {
                 <Card
                   hoverable
                   cover={
-                    <Image.PreviewGroup
-                      preview={{
-                        onChange: (current, prev) =>
-                          console.log(
-                            `current index: ${current}, prev index: ${prev}`
-                          ),
-                      }}
-                    >
+                    <Image.PreviewGroup>
                       <Image
                         className="w-full h-full object-cover"
                         src="/imgs/reparos/obra6/obra6-1.jpeg"

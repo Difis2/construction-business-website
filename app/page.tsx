@@ -134,14 +134,7 @@ export default function Home() {
                 <Card
                   hoverable
                   cover={
-                    <Image.PreviewGroup
-                      preview={{
-                        onChange: (current, prev) =>
-                          console.log(
-                            `current index: ${current}, prev index: ${prev}`
-                          ),
-                      }}
-                    >
+                    <Image.PreviewGroup preview={{}}>
                       <Image
                         className="w-full h-full object-cover"
                         src="/imgs/ladrilhos/obra2/obra2-1.jpeg"
@@ -180,14 +173,7 @@ export default function Home() {
                 <Card
                   hoverable
                   cover={
-                    <Image.PreviewGroup
-                      preview={{
-                        onChange: (current, prev) =>
-                          console.log(
-                            `current index: ${current}, prev index: ${prev}`
-                          ),
-                      }}
-                    >
+                    <Image.PreviewGroup preview={{}}>
                       <Image
                         className="w-full h-full object-cover"
                         src="/imgs/reparos/obra1/obra1-1.jpeg"
@@ -209,28 +195,21 @@ export default function Home() {
                 <Card
                   hoverable
                   cover={
-                    <Image.PreviewGroup
-                      preview={{
-                        onChange: (current, prev) =>
-                          console.log(
-                            `current index: ${current}, prev index: ${prev}`
-                          ),
-                      }}
-                    >
+                    <Image.PreviewGroup preview={{}}>
                       <Image
                         className="w-full h-full object-cover"
-                        src="/imgs/Remodelacoes/obra1/obra1-1.jpeg"
+                        src="/imgs/remodelacoes/obra1/obra1-1.jpeg"
                         style={{ maxHeight: "200px" }}
                         alt="imagem 1"
                       />
                       <Image
                         style={{ display: "none" }}
-                        src="/imgs/Remodelacoes/obra1/obra1-2.jpeg"
+                        src="/imgs/remodelacoes/obra1/obra1-2.jpeg"
                         alt="imagem 2"
                       />
                       <Image
                         className="w-full h-full object-cover"
-                        src="/imgs/Remodelacoes/obra1/obra1-3.jpeg"
+                        src="/imgs/remodelacoes/obra1/obra1-3.jpeg"
                         style={{ display: "none" }}
                         alt="imagem 3"
                       />
@@ -272,14 +251,7 @@ export default function Home() {
                 <Card
                   hoverable
                   cover={
-                    <Image.PreviewGroup
-                      preview={{
-                        onChange: (current, prev) =>
-                          console.log(
-                            `current index: ${current}, prev index: ${prev}`
-                          ),
-                      }}
-                    >
+                    <Image.PreviewGroup preview={{}}>
                       <Image
                         className="w-full h-full object-cover"
                         src="/imgs/ladrilhos/obra1/obra1-1.jpeg"
@@ -329,14 +301,7 @@ export default function Home() {
                 <Card
                   hoverable
                   cover={
-                    <Image.PreviewGroup
-                      preview={{
-                        onChange: (current, prev) =>
-                          console.log(
-                            `current index: ${current}, prev index: ${prev}`
-                          ),
-                      }}
-                    >
+                    <Image.PreviewGroup preview={{}}>
                       <Image
                         className="w-full h-full object-cover"
                         src="/imgs/ladrilhos/obra4/obra4-1.jpeg"

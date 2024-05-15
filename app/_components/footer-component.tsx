@@ -8,7 +8,6 @@ const FooterComponent = () => {
 
   function scrollToTop() {
     if (!isBrowser()) return;
-    console.log("HIIIIII");
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
   return (

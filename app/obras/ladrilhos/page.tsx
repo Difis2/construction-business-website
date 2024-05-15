@@ -24,14 +24,7 @@ export default function Ladrilhos() {
               <Card
                 hoverable
                 cover={
-                  <Image.PreviewGroup
-                    preview={{
-                      onChange: (current, prev) =>
-                        console.log(
-                          `current index: ${current}, prev index: ${prev}`
-                        ),
-                    }}
-                  >
+                  <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
                       src="/imgs/ladrilhos/obra1/obra1-1.jpeg"
@@ -79,14 +72,7 @@ export default function Ladrilhos() {
               <Card
                 hoverable
                 cover={
-                  <Image.PreviewGroup
-                    preview={{
-                      onChange: (current, prev) =>
-                        console.log(
-                          `current index: ${current}, prev index: ${prev}`
-                        ),
-                    }}
-                  >
+                  <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
                       src="/imgs/ladrilhos/obra2/obra2-1.jpeg"
@@ -123,14 +109,7 @@ export default function Ladrilhos() {
               <Card
                 hoverable
                 cover={
-                  <Image.PreviewGroup
-                    preview={{
-                      onChange: (current, prev) =>
-                        console.log(
-                          `current index: ${current}, prev index: ${prev}`
-                        ),
-                    }}
-                  >
+                  <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
                       src="/imgs/ladrilhos/obra3/obra3-1.jpeg"
@@ -161,14 +140,7 @@ export default function Ladrilhos() {
               <Card
                 hoverable
                 cover={
-                  <Image.PreviewGroup
-                    preview={{
-                      onChange: (current, prev) =>
-                        console.log(
-                          `current index: ${current}, prev index: ${prev}`
-                        ),
-                    }}
-                  >
+                  <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
                       src="/imgs/ladrilhos/obra4/obra4-1.jpeg"
@@ -199,14 +171,7 @@ export default function Ladrilhos() {
               <Card
                 hoverable
                 cover={
-                  <Image.PreviewGroup
-                    preview={{
-                      onChange: (current, prev) =>
-                        console.log(
-                          `current index: ${current}, prev index: ${prev}`
-                        ),
-                    }}
-                  >
+                  <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
                       src="/imgs/ladrilhos/obra5/obra5-1.jpeg"
@@ -226,14 +191,7 @@ export default function Ladrilhos() {
               <Card
                 hoverable
                 cover={
-                  <Image.PreviewGroup
-                    preview={{
-                      onChange: (current, prev) =>
-                        console.log(
-                          `current index: ${current}, prev index: ${prev}`
-                        ),
-                    }}
-                  >
+                  <Image.PreviewGroup>
                     <Image
                       className="w-full h-full object-cover"
                       src="/imgs/ladrilhos/obra6/obra6-1.jpeg"
